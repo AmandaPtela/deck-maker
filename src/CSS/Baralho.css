@@ -1,0 +1,121 @@
+.secao-baralho {
+  background-color: rgba(124, 184, 184, 0.644);
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#area-botoes {
+  background-color: rgba(5, 5, 5, 0.74);
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+
+.area-cartas {
+  padding: 40px 0 0 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cartas {
+  background-color: rgba(213, 224, 224, 0.644);
+  border: 0.1cm solid rgba(110, 190, 201, 0.671);
+  border-radius: 1.0em;
+  font-family: sans-serif;
+  height: 88%;
+  line-height: 1px;
+  margin: 0;
+  max-width: 350px;
+  min-width: 320px;
+  padding: 10px;
+  text-align: center;
+}
+
+.textos-card {
+  align-items: center;
+  color: rgba(46, 43, 43, 0.822);
+  font-size: 17px;
+  font-weight: 600;
+  max-width: 300px;
+  padding-left: 5px;
+  text-align: center;
+}
+
+.top-text {
+  display: flex;
+  justify-content: space-between;
+  padding:0 15px 0 15px;
+}
+
+.secao-attr {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: baseline;
+  height: fit-content;
+  width: fit-content;
+  padding: 5px;
+}
+
+.line-attr {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100px;
+}
+
+#img-attr-area {
+  display: flex;
+  flex-direction: row;
+  border: 0.1ch solid rgba(46, 43, 43, 0.281);
+  border-radius: 1ch;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.imagem {
+  border-radius: 0.5cm;
+  margin: 5px;
+}
+
+#descricao-baralho {
+  border: 0.1ch solid rgba(46, 43, 43, 0.281);
+  border-radius: 1ch;
+  height: 26%;
+  width: 87%;
+  padding: 20px;
+  line-height: 20px;
+  background-color: rgba(165, 199, 199, 0.541);
+  text-align: center;
+  font-size: 15px;
+}
+
+#botao-excluir{
+  font-size: 15px;
+  height: 30px;
+  width: 100px;
+  border-style: none;
+  border-bottom:rgba(8, 180, 65, 0.767) solid 0.1cm;
+  border-radius: 0.5ch;
+}
+
+#trunfo-card {
+  color: rgba(8, 180, 65, 0.767);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#rare-card {
+  text-align: center;
+  width: 100%;
+}

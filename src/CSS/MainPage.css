@@ -1,0 +1,19 @@
+.MainPage-geral{
+  background-color: rgba(124, 184, 184, 0.644);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-e-preview-area{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  height: 100vh;
+}

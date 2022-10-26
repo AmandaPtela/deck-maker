@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  padding: 10px 0 10px 0;
+}
+
+#ir-baralho {
+  background-color: transparent;
+  color: rgb(162, 163, 163);
+  border-style: none;
+  font-size: 18px;
+}
+
+#ir-baralho:hover {
+  background-color: transparent;
+  color: rgb(214, 214, 214);
+  border-style: none;
+  font-size: 18px;
+  transform: scale(1.1);
+  transition: 0.1s;
+}

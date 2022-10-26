@@ -1,0 +1,118 @@
+.form-total {
+  width: 400px;
+}
+
+.formulario {
+  height: 430px;
+  align-items: center;
+  background-color: rgba(213, 224, 224, 0.644);
+  border-radius: 1.0em;
+  color: rgb(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+  width: 90%;
+}
+
+.number-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.input-form-n {
+  font-size: 15px;
+  height: 35px;
+  text-align: center;
+  width: 100px;
+  border-radius: 0.5ch;
+  border-style: none;
+  background-color: transparent;
+  border-radius: 0.1ch;
+  border-style: none;
+  border-bottom:rgba(34, 33, 34, 0.767) solid 0.1cm;
+}
+
+.input-form {
+  font-size: 15px;
+  height: 35px;
+  text-align: center;
+  width: 340px;
+  border-radius: 0.5ch;
+  border-style: none;
+  background-color: transparent;
+  border-style: none;
+  border-bottom:rgba(34, 33, 34, 0.767) solid 0.1cm;
+  outline-style: none;
+}
+
+#descricao-input {
+  resize: none;
+}
+
+.texto-raridade-check-form, .texto-trunfo {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.secao-raridade {
+  display: flex;
+  align-items: baseline;
+}
+
+.texto-raridade-check-form {
+  padding-right: 15px;
+}
+
+#select-form-raridade {
+  font-size: 16px;
+  height: 35px;
+  text-align: center;
+  width: 200px;
+  border-radius: 0.5ch;
+  border-style: none;
+  background-color: transparent;
+  border-style: none;
+  border-bottom:rgba(34, 33, 34, 0.767) solid 0.1cm;
+}
+
+.secao-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-check-trunfo {
+  height: 22px;
+  width: 30px;
+}
+
+.input-form:focus,
+.input-form-n:focus,
+.select-form-raridade:focus,
+.input-check-trunfo {
+  border-radius: 1ch;
+  border-style: none;
+  border-bottom:rgba(8, 180, 65, 0.767) solid 0.1cm;
+}
+
+#botao-salvar-off {
+  font-size: 20px;
+  height: 35px;
+  width: 110px;
+}
+
+#botao-salvar-on {
+  font-size: 18px;
+  height: 35px;
+  width: 110px;
+  border-style: none;
+  border-bottom:rgba(8, 180, 65, 0.767) solid 0.1cm;
+  border-radius: 0.5ch;
+  background-color: rgba(177, 204, 204, 0.644);
+}

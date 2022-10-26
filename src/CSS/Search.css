@@ -1,0 +1,88 @@
+a {
+  text-decoration: none;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.labels {
+  color: whitesmoke;
+}
+
+#input-nome {
+  text-align: center;
+  font-size: 15px;
+  width: 250px;
+  height: 2.5ch;
+  margin-right: 1ch;
+}
+
+#select-raridade {
+  text-align: center;
+  font-size: 15px;
+  height: 3ch;
+  width: 160px;
+  margin-left: 1ch;
+  margin-right: 1ch;
+}
+
+.header-clicked-on {
+  width: 90vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.area-filtro {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+#label-busca {
+  color: aliceblue;
+}
+.header-clicked-off{
+  width: 74.8vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#pesquisa {
+  background-color: transparent;
+  color: rgb(162, 163, 163);
+  border-style: none;
+  font-size: 18px;
+  position: relative; right: 15%;
+}
+
+#pesquisa:hover {
+  background-color: transparent;
+  color: rgb(214, 214, 214);
+  border-style: none;
+  font-size: 18px;
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+#botao-voltar {
+  background-color: transparent;
+  color: rgb(162, 163, 163);
+  border-style: none;
+  font-size: 18px;
+}
+
+#botao-voltar:hover {
+  background-color: transparent;
+  color: rgb(214, 214, 214);
+  border-style: none;
+  font-size: 18px;
+  transform: scale(1.1);
+  transition: 0.1s;
+}

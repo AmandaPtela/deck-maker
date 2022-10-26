@@ -1,0 +1,101 @@
+.secao-carta {
+  background-color: rgba(213, 224, 224, 0.644);
+  border: 0.1cm solid rgba(110, 190, 201, 0.671);
+  border-radius: 1.0em;
+  font-family: sans-serif;
+  height: 90%;
+  line-height: 1px;
+  margin: 0;
+  max-width: 350px;
+  min-width: 320px;
+  padding: 10px;
+  text-align: center;
+}
+
+.textos-card {
+  align-items: center;
+  color: rgba(46, 43, 43, 0.822);
+  font-size: 17px;
+  font-weight: 600;
+  max-width: 300px;
+  padding-left: 5px;
+  text-align: center;
+}
+
+.top-preview {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 5px 15px;
+  height: 10%;
+}
+
+#rare-card {
+  text-align: center;
+  width: 100%;
+}
+
+.textos-card-bottom {
+  align-items: center;
+  color: rgba(46, 43, 43, 0.822);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+.secao-attr {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 35%;
+}
+
+.line-attr {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#trunfo-card {
+  color: rgba(8, 180, 65, 0.767);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#logo-card {
+  color: rgba(24, 27, 25, 0.767);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#img-attr {
+  display: flex;
+  flex-direction: row;
+  border: 0.1ch solid rgba(46, 43, 43, 0.281);
+  border-radius: 1ch;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.imagem {
+  border-radius: 0.5cm;
+  margin: 5px;
+}
+
+#descricao {
+  border: 0.1ch solid rgba(46, 43, 43, 0.281);
+  border-radius: 1ch;
+  height: 26%;
+  width: 87%;
+  padding: 20px;
+  line-height: 20px;
+  background-color: rgba(177, 204, 204, 0.644);
+  text-align: center;
+  resize: none;
+  font-size: 15px;
+}
