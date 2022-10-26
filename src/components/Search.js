@@ -7,8 +7,6 @@ function Search() {
   const [clicked, setClicked] = useState(false);
   const [filtro, setFiltro] = useState('');
   const {
-    nomeCarta,
-    cardTrunfo,
     filtrado,
     setCopiaBaralho,
   } = useContext(Context);

@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
-import '../CSS/Form.css';
-import { Context } from '../Context/Provider';
+import React, { useContext } from "react";
+import "../CSS/Form.css";
+import { Context } from "../Context/Provider";
 
 // Feito com ajuda de Pesquisa no https://reactjs.org/docs/handling-events.html
 function Form() {
@@ -9,14 +9,20 @@ function Form() {
     setNomeCarta,
     descricaoCarta,
     setDescricao,
-    imagem, setImg,
-    attr1, setAttr1,
-    attr2, setAttr2,
-    attr3, setAttr3,
+    imagem,
+    setImg,
+    attr1,
+    setAttr1,
+    attr2,
+    setAttr2,
+    attr3,
+    setAttr3,
     raridade,
     setRaridade,
-    cardTrunfo, setCardTrunfo,
-    copiaBaralho, setCopiaBaralho,
+    cardTrunfo,
+    setCardTrunfo,
+    copiaBaralho,
+    setCopiaBaralho,
     baralhoPrincipal,
     setBaralho,
     setFiltrado,
@@ -44,15 +50,15 @@ function Form() {
   } */
 
   const handleSaveButton = () => {
-    setNomeCarta(''),
-    setDescricao(''),
-    setImg(''),
-    setAttr1(0),
-    setAttr2(0),
-    setAttr3(0),
-    setRaridade('normal'),
-    setCardTrunfo(false),
-    setBaralho([
+    /* eslint-disable */ setNomeCarta(""),
+    /* eslint-disable */ setDescricao(""),
+    /* eslint-disable */ setImg(""),
+    /* eslint-disable */ setAttr1(0),
+    /* eslint-disable */ setAttr2(0),
+    /* eslint-disable */ setAttr3(0),
+    /* eslint-disable */ setRaridade("normal"),
+    /* eslint-disable */ setCardTrunfo(false),
+    /* eslint-disable */ setBaralho([
       ...baralhoPrincipal,
       {
         nomeCarta,
@@ -65,7 +71,8 @@ function Form() {
         cardTrunfo,
       },
     ]),
-    setCopiaBaralho([...baralhoPrincipal,
+    setCopiaBaralho([
+      ...baralhoPrincipal,
       {
         nomeCarta,
         descricaoCarta,
@@ -77,7 +84,8 @@ function Form() {
         cardTrunfo,
       },
     ]),
-    setFiltrado([...baralhoPrincipal,
+    setFiltrado([
+      ...baralhoPrincipal,
       {
         nomeCarta,
         descricaoCarta,
@@ -89,16 +97,8 @@ function Form() {
         cardTrunfo,
       },
     ]);
-    localStorage.setItem('baralho', baralhoPrincipal);
+    localStorage.setItem("baralho", baralhoPrincipal);
   };
-  /*
-    const { name } = target;
-    const valor = (target.type === 'checkbox')
-      ? target.checked
-      : target.value;
-    this.setState({
-      [name]: valor,
-    }, this.onSaveButtonClick); */
 
   const trunfo = copiaBaralho.filter((cartaa) => cartaa.cardTrunfo === true);
   const trunfoCheck = trunfo.length > 0;
@@ -110,8 +110,8 @@ function Form() {
           placeholder="Nome da Carta"
           type="text"
           name="nomeCarta"
-          value={ nomeCarta }
-          onChange={ (e) => setNomeCarta(e.target.value) } // o que for escrito, vira valor do onInput
+          value={nomeCarta}
+          onChange={(e) => setNomeCarta(e.target.value)} // o que for escrito, vira valor do onInput
           data-testid="name-input"
         />
         <textarea
@@ -120,8 +120,8 @@ function Form() {
           type="textarea"
           placeholder="Descrição da Carta"
           name="descricaoCarta"
-          value={ descricaoCarta }
-          onChange={ (e) => setDescricao(e.target.value) }
+          value={descricaoCarta}
+          onChange={(e) => setDescricao(e.target.value)}
           data-testid="description-input"
         />
         <div className="number-area">
@@ -130,8 +130,8 @@ function Form() {
             type="number"
             placeholder="Valor atributo 1"
             name="attr1"
-            onChange={ (e) => setAttr1(e.target.value) }
-            value={ attr1 }
+            onChange={(e) => setAttr1(e.target.value)}
+            value={attr1}
             data-testid="attr1-input"
           />
           <input
@@ -140,8 +140,8 @@ function Form() {
             inputMode="numeric"
             placeholder="Valor atributo 2"
             name="attr2"
-            onChange={ (e) => setAttr2(e.target.value) }
-            value={ attr2 }
+            onChange={(e) => setAttr2(e.target.value)}
+            value={attr2}
             data-testid="attr2-input"
           />
           <input
@@ -149,8 +149,8 @@ function Form() {
             type="number"
             placeholder="Valor atributo 3"
             name="attr3"
-            onChange={ (e) => setAttr3(e.target.value) }
-            value={ attr3 }
+            onChange={(e) => setAttr3(e.target.value)}
+            value={attr3}
             data-testid="attr3-input"
           />
         </div>
@@ -159,8 +159,8 @@ function Form() {
           className="input-form"
           placeholder="Link imagem"
           type="text"
-          onChange={ (e) => setImg(e.target.value) }
-          value={ imagem }
+          onChange={(e) => setImg(e.target.value)}
+          value={imagem}
           data-testid="image-input"
         />
         <div className="secao-raridade">
@@ -168,34 +168,36 @@ function Form() {
           <select
             id="select-form-raridade"
             name="raridade"
-            value={ raridade }
+            value={raridade}
             data-testid="rare-input"
-            onChange={ (e) => setRaridade(e.target.value) }
+            onChange={(e) => setRaridade(e.target.value)}
           >
             <option>Normal</option>
             <option>Raro</option>
             <option>Lenda</option>
           </select>
         </div>
-        {trunfoCheck ? (<span>Você já tem uma Super Carta em seu baralho</span>
+        {trunfoCheck ? (
+          <span>Você já tem uma Super Carta em seu baralho</span>
         ) : (
           <div className="secao-checkbox">
             <input
               className="input-check-trunfo"
               name="cardTrunfo"
               type="checkbox"
-              checked={ cardTrunfo }
-              onChange={ () => setCardTrunfo(!cardTrunfo) }
+              checked={cardTrunfo}
+              onChange={() => setCardTrunfo(!cardTrunfo)}
               data-testid="trunfo-input"
             />
             <span className="texto-trunfo">Super Carta</span>
-          </div>) }
+          </div>
+        )}
         <button
-          id={ /* isSaveButtonDisabled ? "botao-salvar-off" : */ 'botao-salvar-on' }
+          id={/* isSaveButtonDisabled ? "botao-salvar-off" : */ "botao-salvar-on"}
           name="save-button"
           type="button"
-          disabled={ false }
-          onClick={ handleSaveButton }
+          disabled={false}
+          onClick={handleSaveButton}
           data-testid="save-button"
         >
           Salvar

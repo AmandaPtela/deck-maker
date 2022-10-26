@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { useLocation } from 'react-router';
 import { Context } from '../Context/Provider';
 import '../CSS/Baralho.css';
