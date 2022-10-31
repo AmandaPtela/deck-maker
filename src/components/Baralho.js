@@ -10,14 +10,13 @@ function Baralho() {
     setCopiaBaralho,
   } = useContext(Context);
 
-  const copiaa = JSON.parse(localStorage.getItem('baralho'));
+const copiaa = localStorage.getItem('baralho');  
   const apagar = (carta) => {
     const filtroCard = copiaa.filter((i) => i.nomeCarta !== carta);
     setCopiaBaralho(filtroCard);
   };
   
   const { pathname } = useLocation();
-  console.log(JSON.parse(localStorage.getItem('baralho')));
   return (
     <div className="secao-baralho">
       <header id="area-botoes">
