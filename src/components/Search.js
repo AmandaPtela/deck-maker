@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import '../CSS/Search.css';
 import { Context } from '../Context/Provider';
 import { Link } from 'react-router-dom';
+import img from '../Images/loguinho.png';
 
 function Search() {
   const [clicked, setClicked] = useState(false);
@@ -49,6 +50,10 @@ function Search() {
       { clicked === true
         ? (
           <div className="header-clicked-on">
+            <div id="logo-card-search-on">
+              <img id="logo-icon-on" height="40px" src={ img } alt="ícone de carta" />
+              <p id="logo-text-on" >Deck Maker. </p>
+            </div>
             <div id="area-filtro">
               <span id="label-busca">Busca por: </span> {' '}
               <input
@@ -61,7 +66,6 @@ function Search() {
                 />
               <span id="label-busca"> ou </span>
               <label className="labels" htmlFor="select-raridade">
-                
                 <select
                   onChange={ (e) => {
                     filtrar(e.target.value);
@@ -84,13 +88,19 @@ function Search() {
           </div>)
         : (
           <div className="header-clicked-off">
-          <Link to="/" id="botao-voltar">Voltar</Link>
-          <Link
-            onClick={ () => setClicked(true) }
-            id="pesquisa"
-            >
-            Pesquisar carta
-          </Link>
+            <div id="logo-card-search-off">
+              <img id="logo-icon-search-off" height="40px" src={ img } alt="ícone de carta" />
+              <p id="logo-text-search-off" >Deck Maker. </p>
+            </div>
+            <div id="links">
+              <Link
+                onClick={ () => setClicked(true) }
+                id="pesquisa"
+                >
+                Pesquisar carta
+              </Link>
+              <Link to="/" id="botao-voltar">Voltar</Link>
+            </div>
           </div>
         )}
     </div>

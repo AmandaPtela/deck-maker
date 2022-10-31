@@ -17,7 +17,7 @@ function Header(page) {
             : (
             <>
             <div id="logo-card">
-              <img id="logo-icon" height="40px" src={ img } />
+              <img id="logo-icon" height="40px" src={ img } alt="ícone de carta" />
               <p id="logo-text" >Deck Maker. </p>
             </div>
             <div id="botao-area">
