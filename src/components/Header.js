@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Context } from '../Context/Provider';
 import Search from './Search';
+import img from '../Images/loguinho.png';
 import '../CSS/Header.css';
 
 function Header(page) {
@@ -12,17 +13,25 @@ function Header(page) {
         { page.url === '/baralho'
           ? (
             <Search />
-          )
-          : (
-          <Link to="/baralho">
-          <button
-            onClick={ () => setId(true) }
-            type="button"
-            id="ir-baralho"
-          >
-            Ir para baralho
-          </button>
-        </Link>) }
+            )
+            : (
+            <>
+            <div id="logo-card">
+              <img id="logo-icon" height="40px" src={ img } />
+              <p id="logo-text" >Deck Maker. </p>
+            </div>
+            <div id="botao-area">
+              <Link to="/baralho">
+              <button
+                onClick={ () => setId(true) }
+                type="button"
+                id="ir-baralho"
+                >
+                Ir para baralho
+              </button>
+              </Link>
+            </div>
+            </>) }
       </div>
     </div>
   );

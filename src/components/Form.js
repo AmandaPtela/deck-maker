@@ -56,7 +56,7 @@ function Form() {
     /* eslint-disable */ setAttr1(0),
     /* eslint-disable */ setAttr2(0),
     /* eslint-disable */ setAttr3(0),
-    /* eslint-disable */ setRaridade("normal"),
+    /* eslint-disable */ setRaridade("Normal"),
     /* eslint-disable */ setCardTrunfo(false),
     /* eslint-disable */ setBaralho([
       ...baralhoPrincipal,
@@ -83,7 +83,7 @@ function Form() {
         attr3,
         cardTrunfo,
       },
-    ]),
+    ]);
     setFiltrado([
       ...baralhoPrincipal,
       {
@@ -97,7 +97,7 @@ function Form() {
         cardTrunfo,
       },
     ]);
-    localStorage.setItem("baralho", baralhoPrincipal);
+    localStorage.setItem("copiaBaralho", JSON.stringify(baralhoPrincipal));
   };
 
   const trunfo = copiaBaralho.filter((cartaa) => cartaa.cardTrunfo === true);

@@ -90,7 +90,7 @@
 #descricao-baralho {
   border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1ch;
-  height: 26%;
+  min-height: 70%;
   width: 87%;
   padding: 20px;
   line-height: 20px;
