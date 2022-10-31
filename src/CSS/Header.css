@@ -33,9 +33,10 @@
 #logo-text {
   white-space: nowrap;
   overflow: hidden;
-  animation: aaa 1s steps(10) 1s normal both infinite;
-  border-right: 0.1ch rgb(3, 3, 3) solid;
-  animation: cursor 700ms steps(10) infinite normal;
+  color: rgb(81, 85, 85);
+  animation: aaa 2s steps(12) 1s normal both;
+  border-right: 0.1ch rgb(81, 85, 85) solid;
+  font-size: 18px;
 }
 
 @keyframes aaa {
@@ -44,25 +45,16 @@
   }
   to {
     width: 150px;
+    border-right: 0 rgb(81, 85, 85) solid;
   };
 }
 
-@keyframes cursor {
-  from {
-    border-right-color: black;
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-/* #logo-card:hover {
+#logo-text:hover {
   align-items: center;
   display: flex;
-  transform: scale(1.1);
-  transition: 0.1s;
-  width: 45%;
-} */
+  transition: 0.5s;
+  color: rgba(255, 255, 255, 0.87);
+}
 
 #logo-icon {
   padding-bottom: 10px;
