@@ -3,7 +3,7 @@
   border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1.0em;
   font-family: sans-serif;
-  height: 92%;
+  height: 75%;
   line-height: 1px;
   margin: 0;
   max-width: 350px;
@@ -93,7 +93,7 @@
 #descricao {
   border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1ch;
-  height: 26%;
+  height: 40%;
   max-width: 87%;
   padding: 20px;
   line-height: 20px;

@@ -8,15 +8,16 @@ function Baralho() {
   const {
     copiaBaralho,
     setCopiaBaralho,
+    filtrado,
   } = useContext(Context);
 
 // const copiaa = localStorage.getItem('copiaBaralho');  
   const apagar = (carta) => {
     const filtroCard = copiaBaralho.filter((i) => i.nomeCarta !== carta);
     setCopiaBaralho(filtroCard);
-    console.log(filtroCard);
+    console.log(copiaBaralho);
   };
-  
+  console.log(copiaBaralho);
   const { pathname } = useLocation();
   return (
     <div className="secao-baralho">
