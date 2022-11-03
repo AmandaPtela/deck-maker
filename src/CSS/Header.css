@@ -6,25 +6,26 @@
   width: 100vw;
   height: 50px;
   padding: 10px 0 10px 0;
+  background-color: #F96565;
 }
 
 #ir-baralho {
   background-color: transparent;
-  color: rgb(81, 85, 85);
+  color: #F6E9EE;
   border-style: none;
   font-size: 18px;
 }
 
 #ir-baralho:hover {
   background-color: transparent;
-  color: rgb(214, 214, 214);
+  color: #4B4A4B;
   border-style: none;
   font-size: 18px;
   transform: scale(1.1);
-  transition: 0.1s;
+  transition: 0.5s;
 }
 
-#logo-card{
+#logo-card-area{
   align-items: center;
   display: flex;
   width: 45%;
@@ -33,7 +34,7 @@
 #logo-text {
   white-space: nowrap;
   overflow: hidden;
-  color: rgb(81, 85, 85);
+  color: #F6E9EE;
   animation: aaa 2s steps(12) 1s normal both;
   border-right: 0.1ch rgb(81, 85, 85) solid;
   font-size: 18px;

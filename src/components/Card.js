@@ -23,8 +23,8 @@ function Card() {
           { nomeCarta }
         </p>
         { cardTrunfo === true
-          ? <span id="trunfo-card"> Super </span>
-          : <span id="logo-card"> Simples </span> }
+          ? <span id="trunfo-card-text"> Super </span>
+          : <span id="logo-card-text"> Simples </span> }
       </div>
       <div id="img-attr">
         <img

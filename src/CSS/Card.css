@@ -1,9 +1,9 @@
 .secao-carta {
-  background-color: rgba(213, 224, 224, 0.644);
-  border: 0.1cm solid rgba(110, 190, 201, 0.671);
+  background-color: #FED8D8;
+  border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1.0em;
   font-family: sans-serif;
-  height: 90%;
+  height: 92%;
   line-height: 1px;
   margin: 0;
   max-width: 350px;
@@ -14,7 +14,7 @@
 
 .textos-card {
   align-items: center;
-  color: rgba(46, 43, 43, 0.822);
+  color: #4B4A4B;
   font-size: 17px;
   font-weight: 600;
   max-width: 300px;
@@ -26,7 +26,6 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 15px 5px 15px;
   height: 10%;
 }
 
@@ -37,9 +36,9 @@
 
 .textos-card-bottom {
   align-items: center;
-  color: rgba(46, 43, 43, 0.822);
+  color: #4B4A4B;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 15px;
 }
 
@@ -49,6 +48,7 @@
   justify-content: center;
   align-items: baseline;
   width: 35%;
+  color: #4B4A4B;
 }
 
 .line-attr {
@@ -57,23 +57,25 @@
   align-items: baseline;
   justify-content: space-between;
   width: 100%;
+  padding-right: 2px;
 }
 
-#trunfo-card {
-  color: rgba(8, 180, 65, 0.767);
+#trunfo-card-text {
+  color: #f96565;
   font-weight: 600;
   font-size: 20px;
 }
 
-#logo-card {
-  color: rgba(24, 27, 25, 0.767);
+#logo-card-text {
+  color: #4B4A4B;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #img-attr {
   display: flex;
   flex-direction: row;
+  background-color: #FED8D8;
   border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1ch;
   align-items: center;
@@ -85,6 +87,7 @@
 .imagem {
   border-radius: 0.5cm;
   margin: 5px;
+  background-color: white;
 }
 
 #descricao {
@@ -94,7 +97,7 @@
   max-width: 87%;
   padding: 20px;
   line-height: 20px;
-  background-color: rgba(177, 204, 204, 0.644);
+  background-color: #FED8D8;
   text-align: center;
   font-size: 15px;
 }

@@ -5,9 +5,9 @@
 .formulario {
   height: 430px;
   align-items: center;
-  background-color: rgba(213, 224, 224, 0.644);
+  background-color: #FED8D8;
   border-radius: 1.0em;
-  color: rgb(15, 15, 15);
+  color: #4B4A4B;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -28,29 +28,32 @@
   font-size: 15px;
   height: 35px;
   text-align: center;
-  width: 100px;
+  width: 90px;
   border-radius: 0.5ch;
   border-style: none;
   background-color: transparent;
   border-radius: 0.1ch;
   border-style: none;
-  border-bottom:rgba(34, 33, 34, 0.767) solid 0.1cm;
+  border-bottom:#7D7C7C solid 0.1cm;
+  color: #4B4A4B;
 }
 
 .input-form {
   font-size: 15px;
   height: 35px;
   text-align: center;
-  width: 340px;
+  width: 320px;
   border-radius: 0.5ch;
   border-style: none;
   background-color: transparent;
   border-style: none;
-  border-bottom:rgba(34, 33, 34, 0.767) solid 0.1cm;
+  border-bottom: #7D7C7C solid 0.1cm;
   outline-style: none;
+  color: #4B4A4B;
 }
 
 #descricao-input {
+  color: #4B4A4B;
   resize: none;
 }
 
@@ -77,7 +80,8 @@
   border-radius: 0.5ch;
   background-color: transparent;
   border-style: none;
-  border-bottom:rgba(34, 33, 34, 0.767) solid 0.1cm;
+  border-bottom: #7D7C7C solid 0.1cm;
+  color: #4B4A4B;
 }
 
 .secao-checkbox {
@@ -97,7 +101,7 @@
 .input-check-trunfo {
   border-radius: 1ch;
   border-style: none;
-  border-bottom:rgba(8, 180, 65, 0.767) solid 0.1cm;
+  border-bottom:#F96565 solid 0.1cm;
 }
 
 #botao-salvar-off {
@@ -107,11 +111,12 @@
 }
 
 #botao-salvar-on {
+  color: #4B4A4B;
   font-size: 18px;
   height: 35px;
   width: 110px;
   border-style: none;
-  border-bottom:rgba(8, 180, 65, 0.767) solid 0.1cm;
+  border-bottom:#F96565 solid 0.1cm;
   border-radius: 0.5ch;
-  background-color: rgba(177, 204, 204, 0.644);
+  background-color: #F6E9EE;
 }
