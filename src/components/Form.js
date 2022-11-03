@@ -71,6 +71,7 @@ function Form() {
         cardTrunfo,
       },
     ]),
+    localStorage.setItem("copiaBaralho", JSON.stringify(baralhoPrincipal));
     setCopiaBaralho([
       ...baralhoPrincipal,
       {
@@ -97,7 +98,6 @@ function Form() {
         cardTrunfo,
       },
     ]);
-    localStorage.setItem("copiaBaralho", JSON.stringify(baralhoPrincipal));
   };
 
   const trunfo = copiaBaralho.filter((cartaa) => cartaa.cardTrunfo === true);

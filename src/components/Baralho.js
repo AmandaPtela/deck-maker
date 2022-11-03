@@ -10,10 +10,11 @@ function Baralho() {
     setCopiaBaralho,
   } = useContext(Context);
 
-const copiaa = localStorage.getItem('baralho');  
+// const copiaa = localStorage.getItem('copiaBaralho');  
   const apagar = (carta) => {
-    const filtroCard = copiaa.filter((i) => i.nomeCarta !== carta);
+    const filtroCard = copiaBaralho.filter((i) => i.nomeCarta !== carta);
     setCopiaBaralho(filtroCard);
+    console.log(filtroCard);
   };
   
   const { pathname } = useLocation();
@@ -25,7 +26,8 @@ const copiaa = localStorage.getItem('baralho');
       }
       </header>
       <div className="area-cartas">
-        { copiaBaralho.map((carta, index) => (
+        { copiaBaralho.length === 0 ? <p>Seu baralho está vazio!</p>
+        : copiaBaralho.map((carta, index) => (
           <div className="cartas" key={ index }>
             <div className="top-text">
               <p className="textos-card" data-testid="name-card">
