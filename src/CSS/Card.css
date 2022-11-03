@@ -1,5 +1,5 @@
 .secao-carta {
-  background-color: #FED8D8;
+  background-color: rgba(213, 224, 224, 0.644);
   border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1.0em;
   font-family: sans-serif;
@@ -75,7 +75,7 @@
 #img-attr {
   display: flex;
   flex-direction: row;
-  background-color: #FED8D8;
+  background-color: rgba(213, 224, 224, 0.644);
   border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1ch;
   align-items: center;
@@ -97,7 +97,7 @@
   max-width: 87%;
   padding: 20px;
   line-height: 20px;
-  background-color: #FED8D8;
+  background-color: rgba(213, 224, 224, 0.644);
   text-align: center;
   font-size: 15px;
 }

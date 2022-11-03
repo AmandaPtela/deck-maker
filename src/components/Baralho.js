@@ -32,7 +32,8 @@ const copiaa = localStorage.getItem('baralho');
                 { carta.nomeCarta }
               </p>
               { carta.cardTrunfo === true
-              && <p id="trunfo-card"> Super </p> }
+              ? <p id="trunfo-card"> Super </p>
+              :<p id="logo-card">Simples</p>}
             </div>
             <div id="img-attr-area">
               <img

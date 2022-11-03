@@ -5,7 +5,7 @@
 .formulario {
   height: 430px;
   align-items: center;
-  background-color: #FED8D8;
+  background-color: rgba(213, 224, 224, 0.644);
   border-radius: 1.0em;
   color: #4B4A4B;
   display: flex;

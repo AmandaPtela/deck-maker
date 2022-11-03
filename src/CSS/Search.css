@@ -20,18 +20,27 @@ a {
 #input-nome {
   text-align: center;
   font-size: 15px;
-  width: 250px;
+  width: 230px;
   height: 2.5ch;
   margin-right: 1ch;
+  margin-left: 1ch;
+  border-radius: 1ch;
+  border-style: none;
+  color: #F96565;
+  background-color: #F6E9EE;
 }
 
 #select-raridade {
+  background-color: #F6E9EE;
   text-align: center;
   font-size: 15px;
   height: 3ch;
   width: 160px;
   margin-left: 1ch;
   margin-right: 1ch;
+  border-radius: 1ch;
+  border-style: none;
+  color: #F96565;
 }
 
 .header-clicked-on {
@@ -50,7 +59,7 @@ a {
   align-items: center;
   display: flex;
   justify-content: left;
-  color: rgb(124, 133, 133);
+  color: #F6E9EE;
   font-size: 18px;
   width: 12%;
 }
@@ -60,6 +69,7 @@ padding-bottom: 10px;
 }
 
 #logo-text-search-on {
+  color: #F6E9EE;
   white-space: nowrap;
   overflow: hidden;
   animation: aaa 2s steps(12) 1s normal both;
@@ -98,23 +108,26 @@ padding-bottom: 10px;
 
 #pesquisa {
   background-color: transparent;
-  color: rgb(162, 163, 163);
+  color: #F6E9EE;
   border-style: none;
   font-size: 18px;
 }
 
 #pesquisa:hover {
+  align-items: center;
+  display: flex;
+
   background-color: transparent;
   color: rgb(214, 214, 214);
   border-style: none;
   font-size: 18px;
   transform: scale(1.1);
-  transition: 0.1s;
+  transition: 0.5s;
 }
 
 #botao-voltar {
   background-color: transparent;
-  color: rgb(162, 163, 163);
+  color: #F6E9EE;
   border-style: none;
   font-size: 18px;
 }
@@ -136,14 +149,14 @@ padding-bottom: 10px;
 }
 
 #logo-text-search-off:hover {
-  color: rgb(221, 219, 219);
+  color: rgb(214, 214, 214);
   transition: 0.5s;
 }
 
 #logo-text-search-off {
   white-space: nowrap;
   overflow: hidden;
-  color: rgb(81, 85, 85);
+  color: #F6E9EE;
   font-size: 18px;
   animation: aaa 2s steps(12) 1s normal both;
   border-right: 0.1ch rgb(81, 85, 85) solid;

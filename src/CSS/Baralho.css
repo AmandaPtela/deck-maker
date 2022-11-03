@@ -25,7 +25,7 @@
 }
 .cartas {
   background-color: rgba(213, 224, 224, 0.644);
-  border: 0.1cm solid rgba(110, 190, 201, 0.671);
+  border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1.0em;
   font-family: sans-serif;
   height: 88%;
@@ -39,7 +39,7 @@
 
 .textos-card {
   align-items: center;
-  color: rgba(46, 43, 43, 0.822);
+  color: #4B4A4B;
   font-size: 17px;
   font-weight: 600;
   max-width: 300px;
@@ -51,6 +51,8 @@
   display: flex;
   justify-content: space-between;
   padding:0 15px 0 15px;
+  height: 10%;
+  align-items: center;
 }
 
 .secao-attr {
@@ -69,6 +71,7 @@
   align-items: baseline;
   justify-content: space-between;
   width: 100px;
+  color: #4B4A4B;
 }
 
 #img-attr-area {
@@ -85,6 +88,7 @@
 .imagem {
   border-radius: 0.5cm;
   margin: 5px;
+  background-color: white;
 }
 
 #descricao-baralho {
@@ -94,7 +98,7 @@
   width: 87%;
   padding: 20px;
   line-height: 20px;
-  background-color: rgba(165, 199, 199, 0.541);
+  background-color: rgba(213, 224, 224, 0.644);
   text-align: center;
   font-size: 15px;
 }
@@ -104,14 +108,21 @@
   height: 30px;
   width: 100px;
   border-style: none;
-  border-bottom:rgba(8, 180, 65, 0.767) solid 0.1cm;
+  border-bottom:#F96565 solid 0.1cm;
   border-radius: 0.5ch;
+  color: #4B4A4B;
 }
 
 #trunfo-card {
-  color: rgba(8, 180, 65, 0.767);
+  color: #f96565;
   font-weight: 600;
   font-size: 20px;
+}
+
+#logo-card {
+  color: #4B4A4B;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 #rare-card {
