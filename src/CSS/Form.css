@@ -33,10 +33,10 @@
   border-style: none;
   background-color: transparent;
   border-radius: 0.1ch;
+  outline-style: none;
   border-style: none;
   border-bottom:#7D7C7C solid 0.1cm;
   color: #4B4A4B;
-  outline-style: none;
 }
 
 .input-form-n-max {
