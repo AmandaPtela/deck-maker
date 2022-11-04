@@ -1,4 +1,4 @@
-# Boas vindas ao repositório do projeto Tryunfo!
+# Boas vindas ao repositório do projeto Deck Maker!
 ---
 
 # Habilidades
@@ -24,6 +24,8 @@ Este projeto é um construtor de baralho, onde o usuário consegue:
   * Adicionar e remover uma carta do baralho;
 
   * Visualizar todas as cartas que foram adicionadas ao baralho;
+  
+  * Filtrar as cartas do baralho;
 
 ---
 
