@@ -109,7 +109,7 @@ function Form() {
           placeholder="Descrição da Carta"
           name="descricaoCarta"
           value={descricaoCarta}
-          maxLength={238}
+          maxLength={237}
           onChange={(e) => setDescricao(e.target.value)}
           data-testid="description-input"
         />
