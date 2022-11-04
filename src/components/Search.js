@@ -6,10 +6,11 @@ import img from '../Images/loguinho.png';
 
 function Search() {
   const [clicked, setClicked] = useState(false);
-  const [filtro, setFiltro] = useState('');
+     /* eslint-disable */ const [filtro, setFiltro] = useState('');
   const {
+    baralhoPrincipal,
     filtrado,
-    setCopiaBaralho,
+    setFiltrado,
   } = useContext(Context);
 
   const filtrar = (e) => {
@@ -17,31 +18,30 @@ function Search() {
   };
   const buscarRaridade = (filtroo) => {
     if (filtroo === 'Raro') {
-      const filtradoRaro = filtrado.filter((item) => item.raridade === filtroo);
-      return setCopiaBaralho(filtradoRaro);
+      const filtradoRaro = baralhoPrincipal.filter((item) => item.raridade === filtroo);
+      return setFiltrado(filtradoRaro);
     }
     if (filtroo === 'Normal') {
-      const filtradoRaro = filtrado.filter((item) => item.raridade === filtroo);
-      return setCopiaBaralho(filtradoRaro);
+      const filtradoRaro = baralhoPrincipal.filter((item) => item.raridade === filtroo);
+      return setFiltrado(filtradoRaro);
     }
     if (filtroo === 'Lenda') {
-      const filtradoRaro = filtrado.filter((item) => item.raridade === 'Lenda');
-      return setCopiaBaralho(filtradoRaro);
+      const filtradoRaro = baralhoPrincipal.filter((item) => item.raridade === 'Lenda');
+      return setFiltrado(filtradoRaro);
     }
     if (filtroo === 'Todas') {
-      return setCopiaBaralho(filtrado);
+      return setFiltrado(baralhoPrincipal);
     }
     if (filtroo === 'Super Carta') {
-      const trunfoss = filtrado.find((item) => item.cardTrunfo === true);
-      return setCopiaBaralho([trunfoss]);
+      const trunfoss = baralhoPrincipal.find((item) => item.cardTrunfo === true);
+      return setFiltrado([trunfoss]);
     }
     if(filtroo) {
-      const filtradoNome = filtrado.filter((item) => item.nomeCarta.toUpperCase().includes(filtroo.toUpperCase()));
-      console.log(filtradoNome);
-      setCopiaBaralho(filtradoNome);
+      const filtradoNome = baralhoPrincipal.filter((item) => item.nomeCarta.toUpperCase().includes(filtroo.toUpperCase()));
+      setFiltrado(filtradoNome);
     }
     else {
-      return setCopiaBaralho(filtrado);
+      return setFiltrado(baralhoPrincipal);
     }
   }
 

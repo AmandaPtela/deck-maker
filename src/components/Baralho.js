@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useLocation } from 'react-router';
 import { Context } from '../Context/Provider';
 import '../CSS/Baralho.css';
@@ -6,18 +6,22 @@ import Header from './Header';
 
 function Baralho() {
   const {
-    copiaBaralho,
-    setCopiaBaralho,
     filtrado,
+    setFiltrado,
+    setBaralho,
+    baralhoPrincipal,
   } = useContext(Context);
 
-// const copiaa = localStorage.getItem('copiaBaralho');  
+  useEffect(() => {
+    setFiltrado(baralhoPrincipal);
+  }, [setFiltrado, baralhoPrincipal]);
+
+// const copiaa = localStorage.getItem('copiaBaralho');
   const apagar = (carta) => {
-    const filtroCard = copiaBaralho.filter((i) => i.nomeCarta !== carta);
-    setCopiaBaralho(filtroCard);
-    console.log(copiaBaralho);
+    const filtroCard = baralhoPrincipal.filter((i) => i.nomeCarta !== carta);
+    setBaralho(filtroCard)
+    setFiltrado(filtroCard);
   };
-  console.log(copiaBaralho);
   const { pathname } = useLocation();
   return (
     <div className="secao-baralho">
@@ -27,8 +31,8 @@ function Baralho() {
       }
       </header>
       <div className="area-cartas">
-        { copiaBaralho.length === 0 ? <p>Seu baralho está vazio!</p>
-        : copiaBaralho.map((carta, index) => (
+        { filtrado.length === 0 ? <p>Seu baralho está vazio!</p>
+        : filtrado.map((carta, index) => (
           <div className="cartas" key={ index }>
             <div className="top-text">
               <p className="textos-card" data-testid="name-card">

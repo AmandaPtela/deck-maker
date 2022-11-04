@@ -21,8 +21,6 @@ function Form() {
     setRaridade,
     cardTrunfo,
     setCardTrunfo,
-    copiaBaralho,
-    setCopiaBaralho,
     baralhoPrincipal,
     setBaralho,
     setFiltrado,
@@ -50,6 +48,16 @@ function Form() {
   } */
 
   const handleSaveButton = () => {
+    const carta = {
+      nomeCarta,
+      descricaoCarta,
+      imagem,
+      raridade,
+      attr1,
+      attr2,
+      attr3,
+      cardTrunfo,
+    }
     /* eslint-disable */ setNomeCarta(""),
     /* eslint-disable */ setDescricao(""),
     /* eslint-disable */ setImg(""),
@@ -60,47 +68,15 @@ function Form() {
     /* eslint-disable */ setCardTrunfo(false),
     /* eslint-disable */ setBaralho([
       ...baralhoPrincipal,
-      {
-        nomeCarta,
-        descricaoCarta,
-        imagem,
-        raridade,
-        attr1,
-        attr2,
-        attr3,
-        cardTrunfo,
-      },
+      carta
     ]),
+    setFiltrado(
+      [...carta, carta],
+    ),
     localStorage.setItem("copiaBaralho", JSON.stringify(baralhoPrincipal));
-    setCopiaBaralho([
-      ...baralhoPrincipal,
-      {
-        nomeCarta,
-        descricaoCarta,
-        imagem,
-        raridade,
-        attr1,
-        attr2,
-        attr3,
-        cardTrunfo,
-      },
-    ]);
-    setFiltrado([
-      ...baralhoPrincipal,
-      {
-        nomeCarta,
-        descricaoCarta,
-        imagem,
-        raridade,
-        attr1,
-        attr2,
-        attr3,
-        cardTrunfo,
-      },
-    ]);
   };
 
-  const trunfo = copiaBaralho.filter((cartaa) => cartaa.cardTrunfo === true);
+  const trunfo = baralhoPrincipal.filter((cartaa) => cartaa.cardTrunfo === true);
   const trunfoCheck = trunfo.length > 0;
   return (
     <div className="form-total">
