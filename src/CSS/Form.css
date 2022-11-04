@@ -60,11 +60,10 @@
   text-align: center;
   width: 320px;
   border-radius: 0.5ch;
-  border-style: none;
   background-color: transparent;
   border-style: none;
-  border-bottom: #7D7C7C solid 0.1cm;
   outline-style: none;
+  border-bottom: #7D7C7C solid 0.1cm;
   color: #4B4A4B;
 }
 
