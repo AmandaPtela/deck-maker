@@ -1,6 +1,18 @@
 # Boas vindas ao repositório do projeto Deck Maker!
 ---
 
+Este projeto é um construtor de baralho, onde o usuário consegue:
+
+  * Criar um baralho, com o tema livre;
+
+  * Adicionar e remover uma carta do baralho;
+
+  * Visualizar todas as cartas que foram adicionadas ao baralho;
+  
+  * Filtrar as cartas do baralho;
+
+---
+
 # Habilidades
 
   * Ler o estado de um componente e usá-lo para alterar o que exibimos no browser
@@ -16,16 +28,3 @@
   * Genrenciar os estados da aplicação com Context API
 
 ---
-
-Este projeto é um construtor de baralho, onde o usuário consegue:
-
-  * Criar um baralho, com o tema livre;
-
-  * Adicionar e remover uma carta do baralho;
-
-  * Visualizar todas as cartas que foram adicionadas ao baralho;
-  
-  * Filtrar as cartas do baralho;
-
----
-
