@@ -6,8 +6,7 @@
   height: 450px;
   line-height: 1px;
   margin: 0;
-  max-width: 350px;
-  min-width: 320px;
+  width: 350px;
   padding: 10px;
   text-align: center;
 }
@@ -42,24 +41,6 @@
   line-height: 15px;
 }
 
-.secao-attr {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: baseline;
-  width: 35%;
-  color: #4B4A4B;
-}
-
-.line-attr {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 100%;
-  padding-right: 2px;
-}
-
 #trunfo-card-text {
   color: #f96565;
   font-weight: 600;
@@ -82,6 +63,7 @@
   justify-content: space-between;
   padding: 5px;
   margin-bottom: 5px;
+  height: 215px;
 }
 
 .imagem {
@@ -90,14 +72,32 @@
   background-color: white;
 }
 
+.secao-attr {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 95%;
+}
+
+.line-attr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  height: 60px;
+}
+
 .secao-carta #descricao {
   border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1ch;
   height: 119px;
-  max-width: 87%;
+  width: 308px;
   padding: 20px;
   line-height: 20px;
   background-color: rgba(213, 224, 224, 0.644);
   text-align: center;
   font-size: 15px;
+  resize: none;
 }

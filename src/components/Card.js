@@ -36,7 +36,7 @@ function Card() {
           data-testid="image-card"
         />
         <div className="secao-attr">
-          <div className="line-attr">
+          <div>
             <p className="textos-card" id="rare-card">
               { raridade }
             </p>
@@ -62,7 +62,7 @@ function Card() {
         </div>
       </div>
       <label htmlFor="descricao">
-        <p
+        <textarea
           className="textos-card-bottom"
           id="descricao"
           data-testid="description-card"
@@ -71,7 +71,7 @@ function Card() {
           placeholder="Descrição da carta"
         >
           { descricaoCarta }
-        </p>
+        </textarea>
       </label>
     </div>
   );

@@ -76,55 +76,71 @@ function Form() {
     localStorage.setItem("copiaBaralho", JSON.stringify(baralhoPrincipal));
   };
 
+  const numberOnly = (evt) => {
+    const theEvent = evt || window.event;
+    const key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode( key );
+    const regex = /([0-9]{4})/gm;
+    if (!regex.test(key)) {
+       theEvent.returnValue = false;
+       if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+ };
+
   const trunfo = baralhoPrincipal.filter((cartaa) => cartaa.cardTrunfo === true);
   const trunfoCheck = trunfo.length > 0;
   return (
     <div className="form-total">
       <form className="formulario">
         <input
-          className="input-form"
+          className={ nomeCarta.length >= 20 ? "input-form-max" : "input-form" }
           placeholder="Nome da Carta"
           type="text"
           name="nomeCarta"
-          value={nomeCarta}
-          onChange={(e) => setNomeCarta(e.target.value)} // o que for escrito, vira valor do onInput
+          value={ nomeCarta }
+          maxLength={20}
+          onChange={(e) => setNomeCarta(e.target.value)} // o que for escrito, vira valor do Input
           data-testid="name-input"
         />
         <textarea
-          className="input-form"
+          className={descricaoCarta.length >= 231 ? "input-form-max" : "input-form"}
           id="descricao-input"
           type="textarea"
           placeholder="Descrição da Carta"
           name="descricaoCarta"
           value={descricaoCarta}
+          maxLength={238}
           onChange={(e) => setDescricao(e.target.value)}
           data-testid="description-input"
         />
         <div className="number-area">
           <input
-            className="input-form-n"
+            className={attr1 === '999' ? "input-form-n-max" : "input-form-n"}
             type="number"
             placeholder="Valor atributo 1"
             name="attr1"
+            max={999}
             onChange={(e) => setAttr1(e.target.value)}
             value={attr1}
             data-testid="attr1-input"
           />
           <input
-            className="input-form-n"
+            className={attr2 === '999' ? "input-form-n-max" : "input-form-n"}
             type="number"
             inputMode="numeric"
             placeholder="Valor atributo 2"
             name="attr2"
+            max={999}
             onChange={(e) => setAttr2(e.target.value)}
             value={attr2}
             data-testid="attr2-input"
           />
           <input
-            className="input-form-n"
+            className={attr3 === '999' ? "input-form-n-max" : "input-form-n"}
             type="number"
             placeholder="Valor atributo 3"
             name="attr3"
+            max={999}
             onChange={(e) => setAttr3(e.target.value)}
             value={attr3}
             data-testid="attr3-input"
