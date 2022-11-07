@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Context } from '../Context/Provider';
 import Search from './Search';
 import img from '../Images/loguinho.png';
+import criacao from '../Images/img-criacao.png';
 import '../CSS/Header.css';
 
 function Header(page) {
@@ -17,10 +18,14 @@ function Header(page) {
             : (
             <>
             <div id="logo-card-area">
-              <img id="logo-icon" height="40px" src={ img } alt="ícone de carta" />
+              <img className="header-icon" height="40px" src={ img } alt="ícone de carta" />
               <p id="logo-text" >Deck Maker. </p>
             </div>
-            <div id="botao-area">
+            <div id="mid-header">
+              <img className="header-icon" height="40px" src={criacao} />
+              <span id="title-header">Criação</span>
+            </div>
+            {/* <div id="botao-area">
               <Link to="/baralho">
               <button
                 onClick={ () => setId(true) }
@@ -30,7 +35,7 @@ function Header(page) {
                 Ir para baralho
               </button>
               </Link>
-            </div>
+            </div> */}
             </>) }
       </div>
     </div>

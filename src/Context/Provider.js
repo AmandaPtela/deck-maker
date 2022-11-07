@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 export const Context = createContext();
 
 export function Provider({ children }) {
+  const [custoCarta, setCustoCarta] = useState(0);
   const [nomeCarta, setNomeCarta] = useState('');
   const [descricaoCarta, setDescricao] = useState('');
   const [imagem, setImg] = useState('');
@@ -23,6 +24,8 @@ export function Provider({ children }) {
   return (
     <Context.Provider
       value={ {
+        custoCarta,
+        setCustoCarta,
         nomeCarta,
         setNomeCarta,
         descricaoCarta,

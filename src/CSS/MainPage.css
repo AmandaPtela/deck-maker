@@ -1,5 +1,6 @@
 .MainPage-geral{
-  background-color: #F6E9EE;
+  background-color: #c4bdbd;
+  /* background-color: #F6E9EE; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +13,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px;
+  padding: 5px 0 0 0;
   text-align: center;
   width: 90%;
   height: 100vh;

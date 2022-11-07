@@ -11,6 +11,18 @@
   text-align: center;
 }
 
+#carta-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#carta-preview-text {
+  font-size: 18px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
 .textos-card {
   align-items: center;
   color: #4B4A4B;
@@ -45,12 +57,14 @@
   color: #f96565;
   font-weight: 600;
   font-size: 20px;
+  padding-right: 5px;
 }
 
 #logo-card-text {
   color: #4B4A4B;
   font-weight: 600;
   font-size: 18px;
+  padding-right: 5px;
 }
 
 #img-attr {

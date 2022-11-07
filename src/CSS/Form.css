@@ -17,54 +17,135 @@
   width: 90%;
 }
 
-.number-area {
+#top-section-form {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   width: 100%;
 }
 
+#custo-input {
+  width: 60px;
+  height: 35px;
+  border-radius: 3em;
+  background-color: transparent;
+  outline-style: none;
+  border:#7D7C7C solid 0.3ch;
+  color: #4B4A4B;
+  text-align: center;
+}
+
+#name-input {
+  font-size: 15px;
+  height: 45px;
+  text-align: center;
+  width: 160px;
+  border-radius: 5em;
+  background-color: transparent;
+  outline-style: none;
+  border: #7D7C7C solid 0.3ch;
+  color: #4B4A4B;
+}
+
+.secao-raridade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto-raridade-check-form {
+  width: 80px;
+  font-size: 16px;
+}
+
+#select-form-raridade {
+  font-size: 16px;
+  height: 25px;
+  text-align: center;
+  width: 85px;
+  border-radius: 5em;
+  background-color: transparent;
+  border: #7D7C7C solid 0.3ch;
+  color: #4B4A4B;
+}
+
+
+#img-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+#image-input {
+  height: 35px;
+  width: 170px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5em;
+  background-color: transparent;
+  outline-style: none;
+  border: #7D7C7C solid 0.3ch;
+  color: #4B4A4B;
+}
+
+#upload-img-label{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 115px;
+  outline-style: none;
+  border-radius: 3em;
+  border: #7D7C7C solid 0.3ch;
+  color: #4B4A4B;
+}
+
+#title-status {
+  padding-bottom: 5px;
+}
+
+.number-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+}
+
+#attr-area {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#attr1-area, #attr2-area, #attr3-area {
+  border-radius: 3em;
+  border-style: none;
+  border:#7D7C7C solid 0.3ch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
 .input-form-n {
   font-size: 15px;
-  height: 35px;
   text-align: center;
-  width: 80px;
-  border-radius: 0.5ch;
-  border-style: none;
+  width: 30px;
   background-color: transparent;
-  border-radius: 0.1ch;
+  color: #4B4A4B;
   outline-style: none;
   border-style: none;
-  border-bottom:#7D7C7C solid 0.1cm;
-  color: #4B4A4B;
 }
 
 .input-form-n-max {
   font-size: 15px;
-  height: 35px;
   text-align: center;
-  width: 80px;
-  border-radius: 0.5ch;
-  border-style: none;
+  width: 30px;
   background-color: transparent;
-  border-radius: 0.1ch;
-  border-style: none;
-  border-bottom:#7D7C7C solid 0.1cm;
   color: #F96565;
-  outline-style: none;
-}
-
-.input-form {
-  font-size: 15px;
-  height: 35px;
-  text-align: center;
-  width: 320px;
-  border-radius: 0.5ch;
-  background-color: transparent;
   border-style: none;
   outline-style: none;
-  border-bottom: #7D7C7C solid 0.1cm;
-  color: #4B4A4B;
 }
 
 .input-form-max {
@@ -72,11 +153,9 @@
   height: 35px;
   text-align: center;
   width: 320px;
-  border-radius: 0.5ch;
-  border-style: none;
+  border-radius: 3em;
   background-color: transparent;
-  border-style: none;
-  border-bottom: #7D7C7C solid 0.1cm;
+  border-bottom: #8b0404 solid 0.3ch;
   outline-style: none;
   color: #4B4A4B;
   animation: treme 0.1s;
@@ -92,35 +171,30 @@
 }
 
 #descricao-input {
-  color: #4B4A4B;
   resize: none;
+  font-size: 15px;
+  height: 130px;
+  text-align: center;
+  width: 320px;
+  border-radius: 1em;
+  background-color: transparent;
+  border: #7D7C7C solid 0.3ch;
+  outline-style: none;
+  color: #4B4A4B;
+}
+
+#descricao-input:focus {
+  border-radius: 1em;
+  background-color: transparent;
+  border: #F96565 solid 0.3ch;
+  outline-style: none;
+  color: #4B4A4B;
 }
 
 .texto-raridade-check-form, .texto-trunfo {
   font-size: 18px;
   font-weight: 300;
   line-height: 20px;
-}
-
-.secao-raridade {
-  display: flex;
-  align-items: baseline;
-}
-
-.texto-raridade-check-form {
-  padding-right: 15px;
-}
-
-#select-form-raridade {
-  font-size: 16px;
-  height: 35px;
-  text-align: center;
-  width: 200px;
-  border-radius: 0.5ch;
-  background-color: transparent;
-  border-style: none;
-  border-bottom: #7D7C7C solid 0.1cm;
-  color: #4B4A4B;
 }
 
 .secao-checkbox {
@@ -134,15 +208,22 @@
   width: 30px;
 }
 
-.input-form:focus,
+#custo-input:focus,
+#name-input:focus,
 .input-form-max:focus,
-.input-form-n:focus,
-.input-form-n-max:focus,
+#image-input:focus,
 .select-form-raridade:focus,
 .input-check-trunfo {
-  border-radius: 1ch;
-  border-style: none;
-  border-bottom:#F96565 solid 0.1cm;
+  border-radius: 3em;
+  border:#F96565 solid 0.3ch;
+}
+
+#checkbox-save {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 25px;
 }
 
 #botao-salvar-off {
