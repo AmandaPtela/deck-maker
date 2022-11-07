@@ -1,9 +1,13 @@
 import React, { useContext } from 'react';
 import { Context } from '../Context/Provider';
 import '../CSS/Card.css';
+import forca from '../Images/forca.png';
+import vida from '../Images/vida.png';
+import escudo from '../Images/escudo.png';
 // Feito com ajuda de Pesquisa no https://reactjs.org/docs/handling-events.html
 function Card() {
   const {
+    custoCarta,
     nomeCarta,
     descricaoCarta,
     imagem,
@@ -23,44 +27,50 @@ function Card() {
       </div> */}
       <div className="secao-carta">
         <div className="top-preview">
-          <p className="textos-card" data-testid="name-card">
+          <span id="custo-card">{ custoCarta }</span>
+          <p className="textos-card" id="nome-card">
             { nomeCarta }
           </p>
-          { cardTrunfo === true
+          <p className="textos-card" id="rare-card">
+            { raridade }
+          </p>
+          {/* { cardTrunfo === true
             ? <span id="trunfo-card-text"> Super </span>
-            : <span id="logo-card-text"> Simples </span> }
+            : <span id="logo-card-text"> Simples </span> } */}
         </div>
         <div id="img-attr">
           <img
             className="imagem"
             src={ imagem }
             alt={ nomeCarta }
-            height="200px"
+            height="190px"
             width="200px"
-            data-testid="image-card"
+            id="image-card"
           />
           <div className="secao-attr">
-            <div>
-              <p className="textos-card" id="rare-card">
-                { raridade }
-              </p>
-            </div>
-            <div className="line-attr">
-              <p className="textos-card-bottom" data-testid="attr1-card">
-                Vida
-              </p>
+            <div id="attr1-card">
+              <img className="textos-card-bottom"
+                data-testid="attr1-card"
+                height="30px"
+                alt="ícone de coração"
+                src={vida}>
+              </img>
               <span>{ cardAttr1S }</span>
             </div>
-            <div className="line-attr">
-              <p className="textos-card-bottom" data-testid="attr2-card">
-                Força
-              </p>
+            <div id="attr2-card">
+            <img className="textos-card-bottom"
+                height="30px"
+                alt="ícone de punho"
+                src={forca}>
+              </img>
               <span>{ cardAttr2S }</span>
             </div>
-            <div className="line-attr">
-              <p className="textos-card-bottom" data-testid="attr3-card">
-                Defesa
-              </p>
+            <div id="attr3-card">
+              <img className="textos-card-bottom"
+                height="30px"
+                alt="ícone de escudo"
+                src={escudo}>
+              </img>
               <span>{ cardAttr3S }</span>
             </div>
           </div>

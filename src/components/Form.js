@@ -5,6 +5,7 @@ import criacao from '../Images/img-criacao.png';
 import forca from '../Images/forca.png';
 import vida from '../Images/vida.png';
 import escudo from '../Images/escudo.png';
+import custo from '../Images/custo.png';
 // Feito com ajuda de Pesquisa no https://reactjs.org/docs/handling-events.html
 function Form() {
   const {
@@ -88,13 +89,19 @@ function Form() {
     <div className="form-total">
       <form className="formulario">
         <div id="top-section-form">
-          <input
-            id="custo-input"
-            type="text"
-            name="custoCarta"
-            value={ custoCarta }
-            maxLength={3}
-            onChange={(e) => setcustoCarta(e.target.value)}/>
+          <div id="custo-area">
+            <img height="20px" src={custo} />
+            <label htmlFor="custo-input"> Custo
+              <input
+              id="custo-input"
+              type="text"
+              name="custoCarta"
+              value={ custoCarta }
+              maxLength={1}
+              onChange={(e) => setCustoCarta(e.target.value)}
+              />
+            </label>
+          </div>
           <input
             className={ nomeCarta.length >= 20 ? "input-form-max" : "input-form" }
             placeholder="Nome da Carta"
@@ -160,6 +167,7 @@ function Form() {
                 type="text"
                 placeholder="Valor atributo 1"
                 name="attr1"
+                maxLength={3}
                 max={999}
                 onChange={(e) => setAttr1(e.target.value)}
                 value={attr1}
@@ -174,6 +182,7 @@ function Form() {
                 inputMode="numeric"
                 placeholder="Valor atributo 2"
                 name="attr2"
+                maxLength={3}
                 max={999}
                 onChange={(e) => setAttr2(e.target.value)}
                 value={attr2}
@@ -187,6 +196,7 @@ function Form() {
                 type="text"
                 placeholder="Valor atributo 3"
                 name="attr3"
+                maxLength={3}
                 max={999}
                 onChange={(e) => setAttr3(e.target.value)}
                 value={attr3}
@@ -196,13 +206,13 @@ function Form() {
           </div>
         </div>
         <textarea
-          className={descricaoCarta.length >= 231 ? "input-form-max" : "input-form"}
+          className={descricaoCarta.length >= 170 ? "input-form-max" : "input-form"}
           id="descricao-input"
           type="textarea"
           placeholder="Descrição da Carta"
           name="descricaoCarta"
           value={descricaoCarta}
-          maxLength={237}
+          maxLength={170}
           onChange={(e) => setDescricao(e.target.value)}
           data-testid="description-input"
         />

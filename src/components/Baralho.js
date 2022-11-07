@@ -51,9 +51,9 @@ function Baralho() {
                 width="200px"
                 data-testid="image-card"
               />
-              <div className="secao-attr">
+              <div className="secao-attr-baralho">
                 <div className="line-attr">
-                  <p className="textos-card" id="rare-card">
+                  <p className="textos-card" id="rare-card-baralho">
                     { carta.raridade }
                   </p>
                 </div>

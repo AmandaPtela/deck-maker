@@ -55,7 +55,7 @@
   align-items: center;
 }
 
-.secao-attr {
+.secao-attr-baralho {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -125,7 +125,7 @@
   font-size: 18px;
 }
 
-#rare-card {
+#rare-card-baralho {
   text-align: center;
   width: 100%;
 }

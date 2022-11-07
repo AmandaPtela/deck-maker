@@ -23,30 +23,36 @@
   margin-bottom: 10px;
 }
 
-.textos-card {
+#custo-card {
+  background-image: url('../Images/custo.png');
+  background-size: cover;
+  background-position: 40px;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color: #4B4A4B;
-  font-size: 17px;
-  font-weight: 600;
-  max-width: 300px;
-  padding-left: 5px;
-  text-align: center;
+  position: inherit;
+}
+
+#nome-card {
+  width: 480px;
 }
 
 .top-preview {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 10%;
+  color: #4B4A4B;
 }
 
 #rare-card {
   text-align: center;
-  width: 100%;
+  width: 80px;
 }
 
 .textos-card-bottom {
-  align-items: center;
   color: #4B4A4B;
   font-size: 18px;
   font-weight: 400;
@@ -69,48 +75,44 @@
 
 #img-attr {
   display: flex;
-  flex-direction: row;
-  background-color: rgba(213, 224, 224, 0.644);
-  border: 0.1ch solid rgba(46, 43, 43, 0.281);
-  border-radius: 1ch;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 5px;
   margin-bottom: 5px;
-  height: 215px;
+  width: 100%;
 }
 
-.imagem {
-  border-radius: 0.5cm;
-  margin: 5px;
-  background-color: white;
+#image-card {
+  background-color: transparent;
+  outline: none;
 }
 
 .secao-attr {
   display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: 35%;
-  height: 95%;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.line-attr {
+#attr1-card, #attr2-card, #attr3-card{
+  border-radius: 3em;
+  border-style: none;
+  border:#7D7C7C solid 0.2ch;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 50px;
-  height: 60px;
+  justify-content: space-evenly;
+  width: 25%;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 15px;
 }
 
 .secao-carta #descricao {
-  border: 0.1ch solid rgba(46, 43, 43, 0.281);
-  border-radius: 1ch;
-  height: 130px;
+  border-style: none;
+  height: 100px;
   width: 308px;
   padding: 20px;
   line-height: 20px;
-  background-color: rgba(213, 224, 224, 0.644);
+  background-color: transparent;
   text-align: center;
   font-size: 15px;
   resize: none;
