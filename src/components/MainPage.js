@@ -3,12 +3,13 @@ import '../CSS/MainPage.css';
 import Form from './Form';
 import Card from './Card';
 import Header from './Header';
+import { useLocation } from 'react-router-dom';
 
 function MainPage() {
-  // resolvido com ajuda dos colegas Carla (turma 20A) e Jessy Damasceno(Turma 21A)
+  const page = useLocation();
   return (
       <div className="MainPage-geral">
-        <Header />
+        <Header url={page} title="Criação"/>
         <div className="form-e-preview-e-botoes">
           <Form />
           <Card />

@@ -22,7 +22,7 @@ function Header(page) {
               <img height="23px" src={ img } alt="ícone de carta" />
               <p id="logo-text">Deck Maker.</p>
             </div>
-            { page.url === '/decks'
+            { page.url === '/decks' || page.url === '/criacao'
             ? (
               <>
                 <div id="mid-header">
