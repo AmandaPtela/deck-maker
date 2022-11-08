@@ -3,6 +3,9 @@ import { useLocation } from 'react-router';
 import { Context } from '../Context/Provider';
 import '../CSS/Colecao.css';
 import Header from './Header';
+import forca from '../Images/forca.png';
+import vida from '../Images/vida.png';
+import escudo from '../Images/escudo.png';
 
 function Colecao() {
   const {
@@ -35,12 +38,16 @@ function Colecao() {
         : filtrado.map((carta, index) => (
           <div className="cartas" key={ index }>
             <div className="top-text">
-              <p className="textos-card" data-testid="name-card">
+              <span id="custo-card-colecao">{ carta.custoCarta }</span>
+              <p id="nome-card-colecao">
                 { carta.nomeCarta }
               </p>
-              { carta.cardTrunfo === true
+              <p id="rare-card-colecao">
+                { carta.raridade }
+              </p>
+{/*               { carta.cardTrunfo === true
               ? <p id="trunfo-card"> Super </p>
-              :<p id="logo-card">Simples</p>}
+              :<p id="logo-card">Simples</p>} */}
             </div>
             <div id="img-attr-area">
               <img
@@ -51,39 +58,41 @@ function Colecao() {
                 width="200px"
                 data-testid="image-card"
               />
-              <div className="secao-attr-baralho">
-                <div className="line-attr">
-                  <p className="textos-card" id="rare-card-baralho">
-                    { carta.raridade }
-                  </p>
-                </div>
-                <div className="line-attr">
-                  <p className="textos-card-bottom" data-testid="attr1-card">
-                    Vida
-                  </p>
+              <div className="secao-attr-colecao">
+                <div id="attr1-card-colecao">
+                  <img className="textos-card-bottom"
+                    data-testid="attr1-card"
+                    height="25px"
+                    alt="ícone de coração"
+                    src={vida}>
+                  </img>
                   <span>{ carta.attr1 }</span>
                 </div>
-                <div className="line-attr">
-                  <p className="textos-card-bottom" data-testid="attr2-card">
-                    Força
-                  </p>
+                <div id="attr2-card-colecao">
+                <img className="textos-card-bottom"
+                    height="25px"
+                    alt="ícone de punho"
+                    src={forca}>
+                  </img>
                   <span>{ carta.attr2 }</span>
                 </div>
-                <div className="line-attr">
-                  <p className="textos-card-bottom" data-testid="attr3-card">
-                    Defesa
-                  </p>
+                <div id="attr3-card-colecao">
+                  <img className="textos-card-bottom"
+                    height="25px"
+                    alt="ícone de escudo"
+                    src={escudo}>
+                  </img>
                   <span>{ carta.attr3 }</span>
                 </div>
               </div>
             </div>
-            <p
+            <textarea
               className="textos-card-bottom"
-              id="descricao-baralho"
-              data-testid="description-card"
+              id="descricao-colecao"
+              disabled={true}
             >
               { carta.descricaoCarta }
-            </p>
+            </textarea>
             <button
               id="botao-excluir"
               name={ carta.nomeCarta }
