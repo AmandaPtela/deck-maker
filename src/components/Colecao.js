@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
 import { useLocation } from 'react-router';
 import { Context } from '../Context/Provider';
-import '../CSS/Baralho.css';
+import '../CSS/Colecao.css';
 import Header from './Header';
 
-function Baralho() {
+function Colecao() {
   const {
     filtrado,
     setFiltrado,
@@ -26,7 +26,7 @@ function Baralho() {
   return (
     <div className="secao-baralho">
       <header id="area-botoes">
-      { pathname === '/baralho'
+      { pathname === '/colecao'
       &&  <Header url={ pathname }/>
       }
       </header>
@@ -99,4 +99,4 @@ function Baralho() {
     </div>
   );
 }
-export default Baralho;
+export default Colecao;

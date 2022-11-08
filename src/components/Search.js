@@ -3,6 +3,7 @@ import '../CSS/Search.css';
 import { Context } from '../Context/Provider';
 import { Link } from 'react-router-dom';
 import img from '../Images/logo-header2.png';
+import criacao from '../Images/img-criacao2.png';
 
 function Search() {
   const [clicked, setClicked] = useState(false);
@@ -51,20 +52,21 @@ function Search() {
         ? (
           <div className="header-clicked-on">
             <div id="logo-card-search-on">
-              <img id="logo-icon-on" height="40px" src={ img } alt="ícone de carta" />
-              <p id="logo-text-on" >Deck Maker. </p>
+              <img id="logo-icon-on" height="20px" src={ img } alt="ícone de carta" />
+              <p id="logo-text-search-on" >Deck Maker. </p>
             </div>
-            <div id="area-filtro">
-              <span id="label-busca">Busca por: </span> {' '}
-              <input
-                id="input-nome"
-                placeholder="Nome da carta"
-                onChange={ (e) => {
-                  filtrar(e.target.value);
-                  buscarRaridade(e.target.value);
-                } }
+            <div id="mid-header-search-on">
+              <label className="labels" htmlFor="label-busca">Busca por:
+                <input
+                  id="input-nome"
+                  placeholder="Nome da carta"
+                  onChange={ (e) => {
+                    filtrar(e.target.value);
+                    buscarRaridade(e.target.value);
+                  } }
                 />
-              <span id="label-busca"> ou </span>
+              </label>
+              <label className="labels">ou</label>
               <label className="labels" htmlFor="select-raridade">
                 <select
                   onChange={ (e) => {
@@ -89,10 +91,14 @@ function Search() {
         : (
           <div className="header-clicked-off">
             <div id="logo-card-search-off">
-              <img id="logo-icon-search-off" height="40px" src={ img } alt="ícone de carta" />
+              <img id="logo-icon-search-off" height="23px" src={ img } alt="ícone de carta" />
               <p id="logo-text-search-off" >Deck Maker. </p>
             </div>
-            <div id="links">
+            <div id="mid-header-search-off">
+              <img className="header-icon-search-off" height="30px" src={ criacao } />
+              <span id="title-header-search-off">Coleção</span>
+            </div>
+            <div id="area-botao-off">
               <Link
                 onClick={ () => setClicked(true) }
                 id="pesquisa"

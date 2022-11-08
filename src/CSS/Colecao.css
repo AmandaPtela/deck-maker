@@ -6,16 +6,6 @@
   padding-bottom: 40px;
 }
 
-#area-botoes {
-  background-color: rgba(5, 5, 5, 0.74);
-  display: flex;
-  flex-direction: column;
-  height: 50px;
-  width: 100%;
-  align-items: center;
-  padding: 0 0 20px 0;
-}
-
 .area-cartas {
   padding: 40px 0 0 30px;
   display: flex;
@@ -45,14 +35,6 @@
   max-width: 300px;
   padding-left: 5px;
   text-align: center;
-}
-
-.top-text {
-  display: flex;
-  justify-content: space-between;
-  padding:0 15px 0 15px;
-  height: 10%;
-  align-items: center;
 }
 
 .secao-attr-baralho {

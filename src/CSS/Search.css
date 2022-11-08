@@ -6,14 +6,17 @@ a {
   display: flex;
 }
 
-#area-filtro {
+#mid-header-search-on {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
+  font-size: 18px;
+  transition: 3s;
+  height: 35px;
 }
 
-.labels {
+.labels, #label-busca {
   color: whitesmoke;
 }
 
@@ -51,131 +54,106 @@ a {
   justify-content: left;
 }
 
-#label-busca {
-  color: aliceblue;
-}
-
 #logo-card-search-on {
   align-items: center;
   display: flex;
-  justify-content: left;
-  color: #F6E9EE;
-  font-size: 18px;
-  width: 12%;
-}
-
-#logo-icon-on {
-padding-bottom: 10px;
+  width: 15%;
+  padding-left: 10px;
 }
 
 #logo-text-search-on {
   color: #F6E9EE;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: aaa 2s steps(12) 1s normal both;
-  border-right: 0.1ch rgb(81, 85, 85) solid;
+  font-size: 18px;
+  margin-left: 5px;
+  width: fit-content;
 }
 
-#logo-text-on:hover {
-  color: rgb(221, 219, 219);
+#logo-text-search-on:hover {
   transition: 0.5s;
+  color: #4B4A4B;
 }
 
-@keyframes aaa {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100px;
-    border-right: 0 rgb(81, 85, 85) solid;
-  };
+
+#area-botao-on {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 10px;
+}
+
+#botao-voltar {
+  background-color: transparent;
+  color: #F6E9EE;
+  font-size: 20px;
 }
 
 .header-clicked-off{
-  width: 100vw;
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100vw;
+  padding: 5px 0 5px 0 ;
+}
+
+#logo-card-search-off {
+  align-items: center;
+  display: flex;
+  width: 15%;
   padding-left: 10px;
 }
 
-#links {
+#logo-text-search-off {
+  color: #F6E9EE;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+#logo-text-search-off:hover {
+  transition: 0.5s;
+  color: #4B4A4B;
+}
+
+#mid-header-search-off {
   display: flex;
+  align-items: center;
+  color: #F6E9EE;
+  font-size: 20px;
+  width: fit-content;
+}
+
+#title-header-search-off {
+  margin-left: 5px;
+}
+
+#area-botao-off {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  width: 30%;
+  padding-right: 10px;
 }
 
 #pesquisa {
   background-color: transparent;
   color: #F6E9EE;
-  border-style: none;
-  font-size: 18px;
+  width: 160px;
+  font-size: 20px;
 }
 
 #pesquisa:hover {
-  align-items: center;
-  display: flex;
-
-  background-color: transparent;
-  color: rgb(214, 214, 214);
-  border-style: none;
-  font-size: 18px;
-  transform: scale(1.1);
+  color: #4B4A4B;
   transition: 0.5s;
 }
 
 #botao-voltar {
   background-color: transparent;
   color: #F6E9EE;
-  border-style: none;
-  font-size: 18px;
+  width: 100px;
+  font-size: 20px;
 }
 
 #botao-voltar:hover {
-  background-color: transparent;
-  color: rgb(214, 214, 214);
-  border-style: none;
-  font-size: 18px;
-  transform: scale(1.1);
-  transition: 0.1s;
-}
-
-#logo-card-search-off {
-  align-items: center;
-  display: flex;
-  justify-content: left;
-  width: 11%;
-}
-
-#logo-text-search-off:hover {
-  color: rgb(214, 214, 214);
+  color: #4B4A4B;
   transition: 0.5s;
 }
 
-#logo-text-search-off {
-  white-space: nowrap;
-  overflow: hidden;
-  color: #F6E9EE;
-  font-size: 18px;
-  animation: aaa 2s steps(12) 1s normal both;
-  border-right: 0.1ch rgb(81, 85, 85) solid;
-}
 
-@keyframes aaa {
-  from {
-    width: 0;
-  }
-  to {
-    width: 150px;
-    border-right: 0 rgb(81, 85, 85) solid;
-  };
-}
-
-#logo-icon-search-off {
-  padding-bottom: 10px;
-}
-
-#area-botao-on {
-  width: fit-content;
-}

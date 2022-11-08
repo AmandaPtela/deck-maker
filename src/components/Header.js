@@ -11,18 +11,18 @@ function Header(page) {
   return (
     <div className="header">
       <div className="header-baralho">
-        { page.url === '/baralho'
+        { page.url === '/colecao'
           ? (
             <Search />
             )
             : (
             <>
             <div id="logo-card-area">
-              <img className="header-icon" height="40px" src={ img } alt="ícone de carta" />
-              <p id="logo-text" >Deck Maker. </p>
+              <img height="23px" src={ img } alt="ícone de carta" />
+              <p id="logo-text">Deck Maker.</p>
             </div>
             <div id="mid-header">
-              <img className="header-icon" height="40px" src={criacao} />
+              <img height="30px" src={ criacao } />
               <span id="title-header">Criação</span>
             </div>
             <nav id="botao-area">

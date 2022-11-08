@@ -8,15 +8,6 @@
   padding: 10px 0 10px 0 ;
 }
 
-#mid-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #F6E9EE;
-  font-size: 20px;
-  align-self: center;
-}
-
 #logo-card-area{
   align-items: center;
   display: flex;
@@ -31,6 +22,7 @@
   animation: aaa 2s steps(12) 1s normal both;
   border-right: 0.1ch rgb(81, 85, 85) solid;
   font-size: 18px;
+  margin-left: 5px;
 }
 
 @keyframes aaa {
@@ -47,17 +39,27 @@
   align-items: center;
   display: flex;
   transition: 0.5s;
-  color: rgba(255, 255, 255, 0.87);
+  color: #4B4A4B;
 }
 
-.header-icon {
-  padding-bottom: 8px;
+#mid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #F6E9EE;
+  font-size: 20px;
+  align-self: center;
+}
+
+#title-header {
+  margin-left: 5px;
 }
 
 #botao-area {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-right: 10px;
 }
 
 #ir-baralhos, #ir-menu, #ir-colecao {
@@ -76,6 +78,5 @@
   color: #4B4A4B;
   border-style: none;
   font-size: 20px;
-  transform: scale(1.1);
   transition: 0.5s;
 }
