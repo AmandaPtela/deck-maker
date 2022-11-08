@@ -20,6 +20,7 @@ export function Provider({ children }) {
   // const [filtro, setFiltro] = useState('');
   const [baralhoPrincipal, setBaralho] = useState([]);
   const [filtrado, setFiltrado] = useState([]);
+  const [decks, setDecks ] = useState([])
 
   return (
     <Context.Provider
@@ -56,6 +57,8 @@ export function Provider({ children }) {
         // setFiltro,
         filtrado,
         setFiltrado,
+        decks,
+        setDecks,
       } }
     >
       { children }
