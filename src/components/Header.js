@@ -45,7 +45,7 @@ function Header(page) {
               </button>
 
             </Link>
-            <Link to="/baralhos">
+            <Link to="/decks">
               <button
                 onClick={ () => setId(true) }
                 type="button"
