@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Context } from '../Context/Provider';
 import Search from './Search';
-import img from '../Images/loguinho.png';
+import img from '../Images/logo-header.png';
 import criacao from '../Images/img-criacao.png';
 import '../CSS/Header.css';
 
