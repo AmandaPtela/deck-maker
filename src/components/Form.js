@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../CSS/Form.css";
 import { Context } from "../Context/Provider";
-import criacao from '../Images/img-criacao.png';
+import criacao from '../Images/upload.png';
 import forca from '../Images/forca.png';
 import vida from '../Images/vida.png';
 import escudo from '../Images/escudo.png';

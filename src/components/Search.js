@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import '../CSS/Search.css';
 import { Context } from '../Context/Provider';
 import { Link } from 'react-router-dom';
-import img from '../Images/loguinho.png';
+import img from '../Images/logo-header2.png';
 
 function Search() {
   const [clicked, setClicked] = useState(false);
