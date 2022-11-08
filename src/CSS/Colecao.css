@@ -3,7 +3,6 @@
   width: 100vw;
   height: 100%;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .area-cartas {
@@ -18,13 +17,11 @@
   border: 0.1ch solid rgba(46, 43, 43, 0.281);
   border-radius: 1.0em;
   font-family: sans-serif;
-  height: 88%;
-  line-height: 1px;
-  margin: 5px;
-  max-width: 350px;
-  min-width: 320px;
+  height: 460px;
+  margin: 0;
+  width: 300px;
   padding: 10px;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
 .textos-card {
@@ -37,62 +34,95 @@
   text-align: center;
 }
 
-.secao-attr-baralho {
+.top-text {
+  align-items: center;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: baseline;
-  height: fit-content;
-  width: fit-content;
-  padding: 5px;
+  justify-content: space-around;
+  height: 10%;
+  color: #152222;
 }
 
-.line-attr {
+#custo-card-colecao {
+  background-image: url('../Images/custo.png');
+  background-size: cover;
+  background-position: 40px;
+  width: 60px;
+  height: 50px;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 100px;
-  color: #4B4A4B;
+  justify-content: center;
+  align-items: center;
+  position: inherit;
+}
+
+#nome-card-colecao {
+  width: 480px;
+}
+
+#rare-card-colecao {
+  text-align: center;
+  width: 80px;
 }
 
 #img-attr-area {
   display: flex;
-  flex-direction: row;
-  border: 0.1ch solid rgba(46, 43, 43, 0.281);
-  border-radius: 1ch;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 5px;
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .imagem {
-  border-radius: 0.5cm;
-  margin: 5px;
-  background-color: white;
+  background-color: transparent;
+  outline: none;
 }
 
-#descricao-baralho {
-  border: 0.1ch solid rgba(46, 43, 43, 0.281);
-  border-radius: 1ch;
-  min-height: 70%;
-  width: 87%;
-  padding: 20px;
-  line-height: 20px;
-  background-color: rgba(213, 224, 224, 0.644);
+.secao-attr-colecao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#attr1-card-colecao, #attr2-card-colecao, #attr3-card-colecao {
+  border-radius: 3em;
+  border-style: none;
+  border:#7D7C7C solid 0.2ch;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 25%;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+#descricao-colecao {
+  border-style: none;
+  min-height: 110px;
+  max-height: 80px;
+  width: 263px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 15px;
+  background-color: transparent;
   text-align: center;
   font-size: 15px;
+  resize: none;
+  color: #152222;
 }
 
 #botao-excluir{
   font-size: 15px;
   height: 30px;
-  width: 100px;
+  width: 100%;
   border-style: none;
-  border-bottom:#F96565 solid 0.1cm;
-  border-radius: 0.5ch;
+  background-color: #F96565;
+  border-radius: 1ch;
   color: #4B4A4B;
+}
+
+#botao-excluir:hover {
+  color: #f5f0f5;
 }
 
 #trunfo-card {
@@ -105,9 +135,4 @@
   color: #4B4A4B;
   font-weight: 600;
   font-size: 18px;
-}
-
-#rare-card-baralho {
-  text-align: center;
-  width: 100%;
 }
