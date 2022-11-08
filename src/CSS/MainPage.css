@@ -1,5 +1,5 @@
 .MainPage-geral{
-  background-color: #c4bdbd;
+  background-color: #fed8d8;
   /* background-color: #F6E9EE; */
   display: flex;
   flex-direction: column;
@@ -8,13 +8,20 @@
   height: 100vh;
 }
 
-.form-e-preview-area{
+.form-e-preview-e-botoes{
   align-items: center;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#form-e-preview {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 5px 0 0 0;
-  text-align: center;
-  width: 90%;
-  height: 100vh;
+  width: 100%;
 }
+
+

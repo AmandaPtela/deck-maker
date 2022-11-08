@@ -25,7 +25,7 @@
 }
 
 #custo-area {
-  border:#7D7C7C solid 0.3ch;
+  border:#a6a6a6 solid 0.3ch;
   border-radius: 3em;
   display: flex;
   align-items: center;
@@ -51,8 +51,8 @@
   border-radius: 5em;
   background-color: transparent;
   outline-style: none;
-  border: #7D7C7C solid 0.3ch;
-  color: #4B4A4B;
+  border: #a6a6a6 solid 0.3ch;
+  color: #152222;
 }
 
 .secao-raridade {
@@ -73,7 +73,7 @@
   width: 85px;
   border-radius: 5em;
   background-color: transparent;
-  border: #7D7C7C solid 0.3ch;
+  border: #a6a6a6 solid 0.3ch;
   color: #4B4A4B;
 }
 
@@ -94,8 +94,8 @@
   border-radius: 5em;
   background-color: transparent;
   outline-style: none;
-  border: #7D7C7C solid 0.3ch;
-  color: #4B4A4B;
+  border: #a6a6a6 solid 0.3ch;
+  color: #152222;
 }
 
 #upload-img-label{
@@ -106,12 +106,13 @@
   height: 35px;
   outline-style: none;
   border-radius: 3em;
-  border: #7D7C7C solid 0.3ch;
-  color: #4B4A4B;
+  border: #a6a6a6 solid 0.3ch;
+  color: #152222;
 }
 
 #title-status {
   padding-bottom: 5px;
+  color: #152222;
 }
 
 .number-area {
@@ -130,7 +131,7 @@
 #attr1-area, #attr2-area, #attr3-area {
   border-radius: 3em;
   border-style: none;
-  border:#7D7C7C solid 0.3ch;
+  border:#a6a6a6 solid 0.3ch;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,9 +188,9 @@
   width: 320px;
   border-radius: 1em;
   background-color: transparent;
-  border: #7D7C7C solid 0.3ch;
+  border: #a6a6a6 solid 0.3ch;
   outline-style: none;
-  color: #4B4A4B;
+  color: #152222;
 }
 
 #descricao-input:focus {
@@ -241,7 +242,7 @@
 }
 
 #botao-salvar-on {
-  color: #4B4A4B;
+  color: #152222;
   font-size: 18px;
   height: 35px;
   width: 110px;

@@ -10,7 +10,7 @@ function Header(page) {
   const { setId } = useContext(Context);
   return (
     <div className="header">
-      <div className="botao-baralho">
+      <div className="header-baralho">
         { page.url === '/baralho'
           ? (
             <Search />
@@ -25,18 +25,36 @@ function Header(page) {
               <img className="header-icon" height="40px" src={criacao} />
               <span id="title-header">Criação</span>
             </div>
-            {/* <div id="botao-area">
-              <Link to="/baralho">
+            <nav id="botao-area">
+            <Link to="/">
+              <button
+                /* onClick={ () => setId(true) } */
+                type="button"
+                id="ir-menu"
+                >
+                Menu
+              </button>
+            </Link>
+            <Link to="/colecao">
               <button
                 onClick={ () => setId(true) }
                 type="button"
-                id="ir-baralho"
+                id="ir-colecao"
                 >
-                Ir para baralho
+                Coleção
               </button>
-              </Link>
-            </div> */}
-            </>) }
+            </Link>
+            <Link to="/baralhos">
+              <button
+                onClick={ () => setId(true) }
+                type="button"
+                id="ir-baralhos"
+                >
+                Baralhos
+              </button>
+            </Link>
+          </nav>
+          </>) }
       </div>
     </div>
   );
