@@ -28,10 +28,10 @@ function Card() {
       <div className="secao-carta">
         <div className="top-preview">
           <span id="custo-card">{ custoCarta }</span>
-          <p className="textos-card" id="nome-card">
+          <p id="nome-card">
             { nomeCarta }
           </p>
-          <p className="textos-card" id="rare-card">
+          <p id="rare-card">
             { raridade }
           </p>
           {/* { cardTrunfo === true
@@ -49,25 +49,25 @@ function Card() {
           />
           <div className="secao-attr">
             <div id="attr1-card">
-              <img className="textos-card-bottom"
+              <img className="status"
                 data-testid="attr1-card"
-                height="30px"
+                height="20px"
                 alt="ícone de coração"
                 src={vida}>
               </img>
               <span>{ cardAttr1S }</span>
             </div>
             <div id="attr2-card">
-            <img className="textos-card-bottom"
-                height="30px"
+            <img className="status"
+                height="20px"
                 alt="ícone de punho"
                 src={forca}>
               </img>
               <span>{ cardAttr2S }</span>
             </div>
             <div id="attr3-card">
-              <img className="textos-card-bottom"
-                height="30px"
+              <img className="status"
+                height="20px"
                 alt="ícone de escudo"
                 src={escudo}>
               </img>
@@ -77,9 +77,8 @@ function Card() {
         </div>
         <label htmlFor="descricao">
           <textarea
-            className="textos-card-bottom"
+            className="description-card"
             id="descricao"
-            data-testid="description-card"
             value={ descricaoCarta }
             disabled={true}
             placeholder="Descrição da carta"
