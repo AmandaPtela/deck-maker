@@ -65,25 +65,25 @@ function Form() {
     /* eslint-disable */ setCardTrunfo(false),
     /* eslint-disable */ setBaralho([
       ...baralhoPrincipal,
+      {
+        custoCarta,
+        nomeCarta,
+        descricaoCarta,
+        imagem,
+        raridade,
+        attr1,
+        attr2,
+        attr3,
+        cardTrunfo,
+      },
     ]),
     setFiltrado(
       [...baralhoPrincipal],
     ),
     localStorage.setItem("copiaBaralho", JSON.stringify(baralhoPrincipal));
-  };
-
-  const numberOnly = (evt) => {
-    const theEvent = evt || window.event;
-    const key = theEvent.keyCode || theEvent.which;
-    key = String.fromCharCode( key );
-    const regex = /([0-9]{4})/gm;
-    if (!regex.test(key)) {
-       theEvent.returnValue = false;
-       if(theEvent.preventDefault) theEvent.preventDefault();
-    }
  };
 
-  const trunfo = baralhoPrincipal.filter((cartaa) => cartaa.cardTrunfo === true);
+  const trunfo = baralhoPrincipal.filter((carta) => carta.cardTrunfo === true);
   const trunfoCheck = trunfo.length > 0;
   return (
     <div className="form-total">
@@ -151,8 +151,8 @@ function Form() {
               type="image"
               src={criacao}
               alt="Submit"
-              width="28"
-              height="28"
+              width="20"
+              height="20"
               id="upload-img"
               />
           </label>
@@ -213,6 +213,7 @@ function Form() {
           name="descricaoCarta"
           value={descricaoCarta}
           maxLength={170}
+          spellcheck={false}
           onChange={(e) => setDescricao(e.target.value)}
           data-testid="description-input"
         />
