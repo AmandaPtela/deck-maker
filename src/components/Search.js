@@ -96,7 +96,7 @@ function Search() {
             </div>
             <div id="mid-header-search-off">
               <img className="header-icon-search-off" height="30px" src={ criacao } />
-              <span id="title-header-search-off">Coleção</span>
+              <span id="title-header-search-off">Coleção ({filtrado.length})</span>
             </div>
             <div id="area-botao-off">
               <Link

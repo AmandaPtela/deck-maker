@@ -7,7 +7,7 @@ import criacao from '../Images/img-criacao2.png';
 import '../CSS/Header.css';
 
 function Header(page) {
-  const { setId } = useContext(Context);
+  const { setId, filtrado } = useContext(Context);
   return (
     <div className="header">
       <div className="header-baralho">
@@ -43,6 +43,7 @@ function Header(page) {
                 >
                 Coleção
               </button>
+
             </Link>
             <Link to="/baralhos">
               <button
