@@ -10,7 +10,7 @@ function Menu() {
   const page = useLocation();
   const [criarDeck, setCriarOn] = useState(false);
   const [nomeBaralho, setNomeBaralho] = useState('');
-  const { setDecks, baralho, setBaralho } = useContext(Context);
+  const { setDecks, baralho, setBaralhoTeste } = useContext(Context);
 
 /*   const makeDeck = () => {
     baralho.nome
@@ -31,7 +31,7 @@ function Menu() {
                   <div id="botoes-form-menu">
                     <button
                       type="button"
-                      onClick={ () => setBaralho({ nome: nomeBaralho, cartas: [] }) }
+                      onClick={ () => setBaralhoTeste({ nome: nomeBaralho, cartas: [] }) }
                       id="botao-iniciar-criacao">
                       <Link to="/criacao">
                         Iniciar criação
