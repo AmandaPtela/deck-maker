@@ -30,16 +30,28 @@ function Header(page) {
             </div>
             <nav id="botao-area">
               {page.url.pathname === '/criacao'
-              &&
-                <Link to="/">
-                  <button
-                    onClick={ () => setId(true) }
-                    type="button"
-                    id="ir-menu"
-                    >
-                    Menu
-                  </button>
-                </Link>
+                &&
+                  <Link to="/">
+                    <button
+                      onClick={ () => setId(true) }
+                      type="button"
+                      id="ir-menu"
+                      >
+                      Menu
+                    </button>
+                  </Link>
+              }
+              { page.url === '/decks'
+                &&
+                  <Link to="/">
+                    <button
+                      onClick={ () => setId(true) }
+                      type="button"
+                      id="ir-menu"
+                      >
+                      Menu
+                    </button>
+                  </Link>
               }
               <Link to="/colecao">
                 <button
@@ -50,15 +62,28 @@ function Header(page) {
                   Coleção
                 </button>
               </Link>
-              <Link to="/decks">
-                <button
-                  onClick={ () => setId(true) }
-                  type="button"
-                  id="ir-decks"
-                  >
-                  Baralhos
-                </button>
-              </Link>
+              {page.url.pathname === '/criacao'
+                &&
+                <Link to="/decks">
+                  <button
+                    onClick={ () => setId(true) }
+                    type="button"
+                    id="ir-decks"
+                    >
+                    Baralhos
+                  </button>
+                </Link> }
+              { page.url === '/decks'
+                &&
+                  <Link to="/criacao">
+                    <button
+                      type="button"
+                      id="ir-criacao"
+                      >
+                      Voltar
+                    </button>
+                  </Link>
+              }
             </nav>
           </>
       </div>
