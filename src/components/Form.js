@@ -213,7 +213,6 @@ function Form() {
           name="descricaoCarta"
           value={descricaoCarta}
           maxLength={170}
-          spellcheck={false}
           onChange={(e) => setDescricao(e.target.value)}
           data-testid="description-input"
         />

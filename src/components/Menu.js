@@ -9,7 +9,12 @@ import { Context } from '../Context/Provider';
 function Menu() {
   const page = useLocation();
   const [criarDeck, setCriarOn] = useState(false);
-  const { setDeck } = useContext(Context);
+  const [nomeBaralho, setNomeBaralho] = useState('');
+  const { setDecks, baralho, setBaralho } = useContext(Context);
+
+/*   const makeDeck = () => {
+    baralho.nome
+  } */
   return (
       <div>
         <Header url={page} title="Menu"/>
@@ -22,9 +27,12 @@ function Menu() {
             <label htmlFor="form-create-deck">
               <form>
                 <label id="form-create-deck" htmlFor="input-name-deck"> Dê um nome ao seu baralho
-                  <input id="input-name-deck" type="text"/>
+                  <input id="input-name-deck" onChange={ (e) => setNomeBaralho(e.target.value)} type="text"/>
                   <div id="botoes-form-menu">
-                    <button type="button" onClick={ setDeck } id="botao-iniciar-criacao">
+                    <button
+                      type="button"
+                      onClick={ () => setBaralho({ nome: nomeBaralho, cartas: [] }) }
+                      id="botao-iniciar-criacao">
                       <Link to="/criacao">
                         Iniciar criação
                       </Link>

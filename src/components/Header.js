@@ -7,7 +7,7 @@ import criacao from '../Images/img-criacao2.png';
 import '../CSS/Header.css';
 
 function Header(page) {
-  const { setId, filtrado } = useContext(Context);
+  const { setId, baralho } = useContext(Context);
   if (page.url === '/colecao') {
   return (
     <div className="header">
@@ -21,7 +21,7 @@ function Header(page) {
       <div className="header-baralho">
         <div id="logo-card-area">
           <img height="23px" src={ img } alt="ícone de carta" />
-          <p id="logo-text">Deck Maker.</p>
+          <p id="logo-text">{page.url.pathname === '/criacao' ? baralho.nome : 'Deck Maker.'}</p>
         </div>
           <>
             <div id="mid-header">
