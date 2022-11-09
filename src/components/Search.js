@@ -85,7 +85,7 @@ function Search() {
               </label>
             </div>
             <div id="area-botao-on">
-              <Link to="/" id="botao-voltar">Voltar</Link>
+              <Link to="/criacao" id="botao-voltar">Voltar</Link>
             </div>
           </div>)
         : (
@@ -105,7 +105,7 @@ function Search() {
                 >
                 Pesquisar carta
               </Link>
-              <Link to="/" id="botao-voltar">Voltar</Link>
+              <Link to="/criacao" id="botao-voltar">Voltar</Link>
             </div>
           </div>
         )}
