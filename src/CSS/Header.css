@@ -62,7 +62,7 @@
   padding-right: 10px;
 }
 
-#ir-decks, #ir-menu, #ir-colecao {
+#ir-decks, #ir-menu, #ir-colecao, #ir-criacao {
   background-color: transparent;
   color: #F6E9EE;
   width: 100px;
@@ -71,9 +71,10 @@
   font-size: 20px;
 }
 
-#ir-baralhos:hover,
+#ir-decks:hover,
 #ir-colecao:hover,
-#ir-menu:hover {
+#ir-menu:hover,
+#ir-criacao:hover {
   background-color: transparent;
   color: #4B4A4B;
   border-style: none;
