@@ -14,19 +14,21 @@ function Menu() {
       <div>
         <Header url={page} title="Menu"/>
         <div  className="menu-geral">
-          { criarDeck ? 
           <div className="form-deck">
             <div id="area-img-menu">
-              <img src={ criacao } />
+              <img height="120px" src={ criacao } />
             </div>
+          { criarDeck ?
             <label htmlFor="form-create-deck">
               <form>
                 <label id="form-create-deck" htmlFor="input-name-deck"> Dê um nome ao seu baralho
                   <input id="input-name-deck" type="text"/>
                   <div id="botoes-form-menu">
-                    <Link to="/criacao">
-                      <button type="button" onClick={ setDeck } id="botao-iniciar-criacao">Iniciar criação</button>
-                    </Link>
+                    <button type="button" onClick={ setDeck } id="botao-iniciar-criacao">
+                      <Link to="/criacao">
+                        Iniciar criação
+                      </Link>
+                    </button>
                     <button
                       type="button"
                       id="botao-criar-baralho-menu"
@@ -38,26 +40,34 @@ function Menu() {
                 </label>
               </form>
             </label>
-          </div> 
-          : 
-            <div id="botoes-menu">
-              <button
-              type="button"
-              id="botao-criar-baralho-menu"
-              onClick={ () => setCriarOn(true)}
-              >
-                Criar Baralho
-              </button>
-              <Link to="/decks">
-              <button
+            : 
+              <div id="botoes-menu">
+                <button
                 type="button"
-                id="ir-decks-menu"
+                id="botao-criar-baralho-menu"
+                onClick={ () => setCriarOn(true)}
                 >
-                Baralhos
-              </button>
-            </Link>
+                  Criar Baralho
+                </button>
+                  <button
+                    type="button"
+                    id="ir-decks-menu"
+                  >
+                    <Link to="/decks">
+                      Baralhos
+                    </Link>
+                  </button>
+
+                  <button
+                    type="button"
+                    id="ir-colecao-menu"
+                  >
+                    <Link to="/colecao">
+                     Coleção
+                    </Link>
+                  </button>
+              </div>}
           </div>
-          }
         </div> 
       </div>
   );
