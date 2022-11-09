@@ -1,3 +1,7 @@
+a {
+  color: #ffff;
+}
+
 .menu-geral {
   height: 100vh;
   display: flex;
@@ -21,13 +25,14 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  height: 150px;
+  height: 170px;
   color: #4b4a4b;
 }
 
 #input-name-deck {
-  border-radius: 1em;
-  height: 20px;
+  border-radius: 0.8em;
+  height: 30px;
+  width: 290px;
   border: none;
   outline: none;
   text-align: center;
@@ -38,15 +43,38 @@
 display: flex;
 flex-direction: column;
 justify-content: space-around;
-height: 80px;
+height: 90px;
 }
 
 #botoes-menu {
   display: flex;
-  
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 150px;
 }
 
-#botao-criar-baralho-menu, #ir-decks-menu {
+#botao-iniciar-criacao,
+#botao-criar-baralho-menu,
+#ir-decks-menu,
+#ir-colecao-menu {
+  background-color: #f96565;
+  color: #ffff;
+  border: none;
+  border-radius: 1em;
+  padding: 5px;
+  font-size: 18px;
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#botao-criar-baralho-menu:hover,
+a:hover {
+  color: #4b4a4b;
+}
+
+/* #botao-iniciar-criacao {
   background-color: #f96565;
   color: #4b4a4b;
   border: none;
@@ -54,14 +82,4 @@ height: 80px;
   padding: 5px;
   font-size: 20px;
   width: 150px;
-}
-
-#botao-iniciar-criacao {
-  background-color: #f96565;
-  color: #4b4a4b;
-  border: none;
-  border-radius: 1em;
-  padding: 5px;
-  font-size: 20px;
-  width: 150px;
-}
+} */
