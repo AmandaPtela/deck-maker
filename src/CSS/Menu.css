@@ -8,11 +8,12 @@
 .form-deck {
   display: flex;
   flex-direction: column;
-
+  height: 270px;
   align-items: center;
   background-color: #fed8d8;
   border-radius: 1em;
   padding: 35px;
+  justify-content: space-around;
 }
 
 #form-create-deck {
@@ -20,7 +21,7 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  height: 100px;
+  height: 150px;
   color: #4b4a4b;
 }
 
@@ -33,13 +34,34 @@
   border-bottom: solid 0.1cm #f96565;
 }
 
-#botao-criar-deck {
+#botoes-form-menu {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+height: 80px;
+}
+
+#botoes-menu {
+  display: flex;
+  
+}
+
+#botao-criar-baralho-menu, #ir-decks-menu {
   background-color: #f96565;
   color: #4b4a4b;
   border: none;
   border-radius: 1em;
   padding: 5px;
-  width: 160px;
+  font-size: 20px;
+  width: 150px;
+}
+
+#botao-iniciar-criacao {
+  background-color: #f96565;
+  color: #4b4a4b;
+  border: none;
+  border-radius: 1em;
+  padding: 5px;
   font-size: 20px;
   width: 150px;
 }
