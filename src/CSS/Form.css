@@ -235,10 +235,20 @@
   height: 25px;
 }
 
+#aviso-sp {
+  width: 180px;
+  color: #F96565;
+  text-shadow: 0.5px 0.5px 0.5px #af6666;
+}
+
 #botao-salvar-off {
-  font-size: 20px;
+  color: #fff;
+  font-size: 18px;
   height: 35px;
   width: 110px;
+  border-style: none;
+  border-radius: 0.5ch;
+  background-color: #F96565;
 }
 
 #botao-salvar-on {
@@ -247,7 +257,11 @@
   height: 35px;
   width: 110px;
   border-style: none;
-  border-bottom:#F96565 solid 0.1cm;
   border-radius: 0.5ch;
-  background-color: #F6E9EE;
+  background-color: #a6a6a6;
+}
+
+#botao-salvar-on:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }

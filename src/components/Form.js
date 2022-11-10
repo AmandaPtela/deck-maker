@@ -218,7 +218,7 @@ function Form() {
         />
         <div id="checkbox-save">
           {trunfoCheck ? (
-            <span>Você já tem uma Super Carta em seu baralho</span>
+            <span id="aviso-sp" >Já existe uma Super Carta em seu baralho</span>
           ) : (
             <div className="secao-checkbox">
               <input
