@@ -25,20 +25,26 @@
 }
 
 #custo-area {
-  border:#a6a6a6 solid 0.3ch;
-  border-radius: 3em;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#label-area {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 #custo-input {
-  width: 20px;
-  height: 35px;
+  width: 50px;
+  height: 20px;
   background-color: transparent;
   outline-style: none;
   text-align: center;
   border: none;
+  border:#a6a6a6 solid 0.3ch;
+  border-radius: 3em;
   color: #4B4A4B;
   font-size: 16px;
 }
@@ -61,11 +67,6 @@
   align-items: center;
 }
 
-.texto-raridade-check-form {
-  width: 80px;
-  font-size: 16px;
-}
-
 #select-form-raridade {
   font-size: 16px;
   height: 25px;
@@ -76,7 +77,6 @@
   border: #a6a6a6 solid 0.3ch;
   color: #4B4A4B;
 }
-
 
 #img-area {
   display: flex;
@@ -202,8 +202,9 @@
 }
 
 .texto-raridade-check-form, .texto-trunfo {
+  width: 90px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 20px;
 }
 
@@ -218,11 +219,14 @@
   width: 30px;
 }
 
+#custo-input:focus,
 #name-input:focus,
-.input-form-max:focus,
 #image-input:focus,
-.select-form-raridade:focus,
-.input-check-trunfo {
+#upload-img-label:hover,
+#attr1-area:focus-within,
+#attr2-area:focus-within,
+#attr3-area:focus-within,
+#select-form-raridade:focus {
   border-radius: 3em;
   border:#F96565 solid 0.3ch;
 }

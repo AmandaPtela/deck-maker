@@ -90,17 +90,18 @@ function Form() {
       <form className="formulario">
         <div id="top-section-form">
           <div id="custo-area">
-            <img height="20px" src={custo} />
-            <label htmlFor="custo-input"> Custo
-              <input
+            <div id="label-area">
+              <img height="20px" src={custo} />
+              <label htmlFor="custo-input">Custo</label>
+            </div>
+            <input
               id="custo-input"
               type="text"
               name="custoCarta"
               value={ custoCarta }
               maxLength={1}
               onChange={(e) => setCustoCarta(e.target.value)}
-              />
-            </label>
+            />
           </div>
           <input
             className={ nomeCarta.length >= 20 ? "input-form-max" : "input-form" }
