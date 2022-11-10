@@ -36,7 +36,7 @@ function Colecao() {
       <div className="area-cartas">
         { filtrado.length === 0 ? <p>Seu baralho está vazio!</p>
         : filtrado.map((carta, index) => (
-          <div className="cartas" key={ index }>
+          <div className={carta.cardTrunfo === true ? "carta-super" : "cartas"} key={ index }>
             <div className="top-text">
               <span id="custo-card-colecao">{ carta.custoCarta }</span>
               <p id="nome-card-colecao">
@@ -45,9 +45,6 @@ function Colecao() {
               <p id="rare-card-colecao">
                 { carta.raridade }
               </p>
-{/*               { carta.cardTrunfo === true
-              ? <p id="trunfo-card"> Super </p>
-              :<p id="logo-card">Simples</p>} */}
             </div>
             <div id="img-attr-area">
               <img
@@ -86,13 +83,16 @@ function Colecao() {
                 </div>
               </div>
             </div>
-            <textarea
-              className="textos-card-bottom"
-              id="descricao-colecao"
-              disabled={true}
-            >
-              { carta.descricaoCarta }
-            </textarea>
+            <div
+              id="descricao-area">
+              <textarea
+                className="textos-card-bottom"
+                id="descricao-colecao"
+                disabled={true}
+              >
+                { carta.descricaoCarta }
+              </textarea>
+            </div>
             <button
               id="botao-excluir"
               name={ carta.nomeCarta }

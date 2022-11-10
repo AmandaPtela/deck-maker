@@ -21,11 +21,11 @@ function Card() {
   const cardAttr2S = String(attr2);
   const cardAttr3S = String(attr3);
   return (
-    <div id="carta-preview">
+    <div id="carta-preview-area">
 {/*       <div id="carta-preview-text">
         <span>Preview</span>
       </div> */}
-      <div className="secao-carta">
+      <div id={cardTrunfo === false ? "carta-preview" : "super-preview"}>
         <div className="top-preview">
           <span id="custo-card">{ custoCarta }</span>
           <p id="nome-card">
@@ -78,7 +78,7 @@ function Card() {
         <label htmlFor="descricao">
           <textarea
             className="description-card"
-            id="descricao"
+            id="descricao-preview"
             value={ descricaoCarta }
             disabled={true}
             placeholder="Descrição da carta"
