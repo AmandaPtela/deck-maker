@@ -1,0 +1,21 @@
+.secao-decks {
+  background-color: #fed8d8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+}
+
+.decks-card {
+  background-color: rgba(213, 224, 224, 0.644);
+  border: 0.1ch solid rgba(133, 165, 165, 0.644);
+  border-radius: 1em;
+  font-family: sans-serif;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

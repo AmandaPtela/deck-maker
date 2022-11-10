@@ -1,19 +1,24 @@
-import React, { useCallback, useContext } from 'react';
+import React, { useContext } from 'react';
 import { useLocation } from 'react-router';
 import { Context } from '../Context/Provider';
 import Header from './Header';
+import '../CSS/Decks.css';
 
 function Decks() {
   const { deck } = useContext(Context);
   const { pathname } = useLocation();
   return (
-    <div className="secao-decks">
+    <div>
       <header id="header-decks">
       { pathname === '/decks'
       &&  <Header url={ pathname } title="Baralhos"/>
       }
       </header>
-      <div>{deck.map(element => <li>{element}</li>)}</div>
+      <div className="secao-decks">
+        { deck.map(baralho => 
+          (<button type="button" className="decks-card">{baralho}</button>) 
+        )}
+      </div>
     </div>
   );
 }
