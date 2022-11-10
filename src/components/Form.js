@@ -32,7 +32,6 @@ function Form() {
     setFiltrado,
     baralho,
     setBaralhoTeste,
-    setDecks,
     deck,
   } = useContext(Context);
   /*
@@ -163,19 +162,15 @@ function Form() {
             id="image-input"
             />
           ou
-          <label
-          id="upload-img-label"
-          htmlFor="upload-img">
-            Upload
-            <input
-              type="image"
-              src={criacao}
-              alt="Submit"
-              width="20"
-              height="20"
-              id="upload-img"
-              />
-          </label>
+          <input
+            type="file"
+            src={criacao}
+            alt="Submit"
+            width="20"
+            height="20"
+            id="upload-img"
+            />
+          
         </div>
         <div className="number-area">
           <span id="title-status">Status</span>

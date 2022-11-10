@@ -3,7 +3,7 @@
 }
 
 .formulario {
-  height: 430px;
+  height: 450px;
   align-items: center;
   background-color: rgba(213, 224, 224, 0.644);
   border-radius: 1.0em;
@@ -38,7 +38,7 @@
 
 #custo-input {
   width: 56px;
-  height: 20px;
+  height: 25px;
   background-color: transparent;
   outline-style: none;
   text-align: center;
@@ -51,9 +51,9 @@
 
 #name-input {
   font-size: 15px;
-  height: 40px;
+  height: 45px;
   text-align: center;
-  width: 150px;
+  width: 160px;
   border-radius: 5em;
   background-color: transparent;
   outline-style: none;
@@ -71,7 +71,7 @@
   font-size: 16px;
   height: 25px;
   text-align: center;
-  width: 85px;
+  width: 90px;
   border-radius: 5em;
   background-color: transparent;
   border: #a6a6a6 solid 0.3ch;
@@ -80,15 +80,16 @@
 
 #img-area {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  height: 70px;
+  height: 100px;
   width: 100%;
 }
 
 #image-input {
-  height: 35px;
-  width: 170px;
+  height: 30px;
+  width: 300px;
   font-size: 16px;
   text-align: center;
   border-radius: 5em;
@@ -98,12 +99,11 @@
   color: #152222;
 }
 
-#upload-img-label{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 115px;
-  height: 35px;
+#upload-img{
+  text-align: center;
+  width: 300px;
+  height: 22px;
+  padding: 2px;
   outline-style: none;
   border-radius: 3em;
   border: #a6a6a6 solid 0.3ch;
@@ -222,7 +222,7 @@
 #custo-input:focus,
 #name-input:focus,
 #image-input:focus,
-#upload-img-label:hover,
+#upload-img:hover,
 #attr1-area:focus-within,
 #attr2-area:focus-within,
 #attr3-area:focus-within,
