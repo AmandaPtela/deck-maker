@@ -30,6 +30,8 @@ function Form() {
     baralhoPrincipal,
     setBaralho,
     setFiltrado,
+    baralho,
+    setBaralhoTeste,
   } = useContext(Context);
   /*
   const onSaveButtonClick = () => {
@@ -54,6 +56,18 @@ function Form() {
   } */
 
   const handleSaveButton = () => {
+    const cartinha = {
+      custoCarta,
+      nomeCarta,
+      descricaoCarta,
+      imagem,
+      raridade,
+      attr1,
+      attr2,
+      attr3,
+      cardTrunfo,
+    }
+    console.log(baralho);
     /* eslint-disable */ setCustoCarta(0),
     /* eslint-disable */ setNomeCarta(""),
     /* eslint-disable */ setDescricao(""),
@@ -77,10 +91,11 @@ function Form() {
         cardTrunfo,
       },
     ]),
+    setBaralhoTeste({nome: baralho.nome, cartas: [...baralho.cartas, cartinha]} )
+    localStorage.setItem("baralhos", JSON.stringify(baralho));
     setFiltrado(
       [...baralhoPrincipal],
-    ),
-    localStorage.setItem("copiaBaralho", JSON.stringify(baralhoPrincipal));
+    );
  };
 
   const trunfo = baralhoPrincipal.filter((carta) => carta.cardTrunfo === true);
