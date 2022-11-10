@@ -5,15 +5,17 @@ import Header from './Header';
 import '../CSS/Menu.css';
 import criacao from '../Images/logo-header2.png';
 import { Context } from '../Context/Provider';
+import Decks from './Decks';
 
 function Menu() {
   const page = useLocation();
   const [criarDeck, setCriarOn] = useState(false);
   const [nomeBaralho, setNomeBaralho] = useState('');
-  const { setDecks, baralho, setBaralhoTeste } = useContext(Context);
+  const { deck, baralho, setBaralhoTeste } = useContext(Context);
 
-/*   const makeDeck = () => {
-    baralho.nome
+/*   const iniciarBaralho = () => {
+    setDecks(baralho.nome);
+    setBaralhoTeste({ nome: nomeBaralho, cartas: [] });
   } */
   return (
       <div>
@@ -27,11 +29,14 @@ function Menu() {
             <label htmlFor="form-create-deck">
               <form>
                 <label id="form-create-deck" htmlFor="input-name-deck"> Dê um nome ao seu baralho
-                  <input id="input-name-deck" onChange={ (e) => setNomeBaralho(e.target.value)} type="text"/>
+                  <input id="input-name-deck" onChange={ (e) => { setNomeBaralho(e.target.value); }} type="text"/>
                   <div id="botoes-form-menu">
                     <button
                       type="button"
-                      onClick={ () => setBaralhoTeste({ nome: nomeBaralho, cartas: [] }) }
+                      onClick={ () => {
+                        setBaralhoTeste({ nome: nomeBaralho, cartas: [] });
+                        deck.push(nomeBaralho)
+                      }}
                       id="botao-iniciar-criacao">
                       <Link to="/criacao">
                         Iniciar criação

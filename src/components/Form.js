@@ -32,6 +32,8 @@ function Form() {
     setFiltrado,
     baralho,
     setBaralhoTeste,
+    setDecks,
+    deck,
   } = useContext(Context);
   /*
   const onSaveButtonClick = () => {
@@ -56,6 +58,8 @@ function Form() {
   } */
 
   const handleSaveButton = () => {
+    console.log(deck);
+    console.log(baralho);
     const cartinha = {
       custoCarta,
       nomeCarta,
@@ -67,7 +71,6 @@ function Form() {
       attr3,
       cardTrunfo,
     }
-    console.log(baralho);
     /* eslint-disable */ setCustoCarta(0),
     /* eslint-disable */ setNomeCarta(""),
     /* eslint-disable */ setDescricao(""),
@@ -91,8 +94,9 @@ function Form() {
         cardTrunfo,
       },
     ]),
-    setBaralhoTeste({nome: baralho.nome, cartas: [...baralho.cartas, cartinha]} )
-    localStorage.setItem("baralhos", JSON.stringify(baralho));
+    setBaralhoTeste(prevState => {
+      return { ...prevState, cartas: [...baralho.cartas, cartinha]}} )
+    localStorage.setItem("baralhos", JSON.stringify([{...baralho}]));
     setFiltrado(
       [...baralhoPrincipal],
     );

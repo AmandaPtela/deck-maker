@@ -4,7 +4,7 @@ import { Context } from '../Context/Provider';
 import Header from './Header';
 
 function Decks() {
-  const { Decks } = useContext(Context);
+  const { deck } = useContext(Context);
   const { pathname } = useLocation();
   return (
     <div className="secao-decks">
@@ -13,6 +13,7 @@ function Decks() {
       &&  <Header url={ pathname } title="Baralhos"/>
       }
       </header>
+      <div>{deck.map(element => <li>{element}</li>)}</div>
     </div>
   );
 }

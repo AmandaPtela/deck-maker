@@ -1,5 +1,5 @@
 a {
-  color: #ffff;
+  color: inherit;
 }
 
 .menu-geral {
@@ -70,7 +70,8 @@ height: 90px;
 }
 
 #botao-criar-baralho-menu:hover,
-a:hover {
+#ir-decks-menu:hover,
+#ir-colecao-menu:hover {
   color: #4b4a4b;
 }
 

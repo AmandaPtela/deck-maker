@@ -89,9 +89,8 @@ function Colecao() {
                 className="textos-card-bottom"
                 id="descricao-colecao"
                 disabled={true}
-              >
-                { carta.descricaoCarta }
-              </textarea>
+                defaultValue={ carta.descricaoCarta }
+              />
             </div>
             <button
               id="botao-excluir"
