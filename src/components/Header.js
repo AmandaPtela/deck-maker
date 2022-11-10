@@ -19,18 +19,19 @@ function Header(page) {
   return(
     <div className="header">
       <div className="header-baralho">
-        <div id="logo-card-area">
+        <div id={page.url.pathname === '/' ? "logo-card-menu" : "logo-card-area"}>
           <img height="23px" src={ img } alt="ícone de carta" />
-          <p id="logo-text">{page.url.pathname === '/criacao' ? baralho.nome : 'Deck Maker.'}</p>
+          <p id={page.url.pathname === '/' ? "logo-text-menu" : "logo-text"}>{page.url.pathname === '/criacao' ? baralho.nome : 'Deck Maker.'}</p>
         </div>
-          <>
-            <div id="mid-header">
-              <img height="30px" src={ criacao } />
-              <span id="title-header">{ page.title }</span>
-            </div>
-            <nav id="botao-area">
-              {page.url.pathname === '/criacao'
-                &&
+        <>
+          { page.url.pathname === '/criacao'
+            && (
+              <>
+                <div id="mid-header-criacao">
+                  <img height="30px" src={ criacao } />
+                  <span id="title-header">{ page.title }</span>
+                </div>
+                <nav id={page.url.pathname === '/criacao' && "botao-area-criacao"}>
                   <Link to="/">
                     <button
                       onClick={ () => setId(true) }
@@ -40,41 +41,36 @@ function Header(page) {
                       Menu
                     </button>
                   </Link>
-              }
-              { page.url === '/decks'
-                &&
-                  <Link to="/">
+                  <Link to="/colecao">
                     <button
                       onClick={ () => setId(true) }
                       type="button"
-                      id="ir-menu"
+                      id="ir-colecao"
                       >
-                      Menu
+                      Coleção
                     </button>
                   </Link>
-              }
-              <Link to="/colecao">
-                <button
-                  onClick={ () => setId(true) }
-                  type="button"
-                  id="ir-colecao"
-                  >
-                  Coleção
-                </button>
-              </Link>
-              {page.url.pathname === '/criacao'
-                &&
-                <Link to="/decks">
-                  <button
-                    onClick={ () => setId(true) }
-                    type="button"
-                    id="ir-decks"
-                    >
-                    Baralhos
-                  </button>
-                </Link> }
-              { page.url === '/decks'
-                &&
+                  <Link to="/decks">
+                    <button
+                      onClick={ () => setId(true) }
+                      type="button"
+                      id="ir-decks"
+                      >
+                      Baralhos
+                    </button>
+                  </Link>
+                </nav>
+              </>
+            )
+          }
+          { page.url === '/decks'
+            && (
+              <>
+                <div id="mid-header-decks">
+                  <img height="30px" src={ criacao } />
+                  <span id="title-header">{ page.title }</span>
+                </div>
+                <nav id={ page.url=== '/decks' && "botao-area-decks" }>
                   <Link to="/criacao">
                     <button
                       type="button"
@@ -83,9 +79,11 @@ function Header(page) {
                       Voltar
                     </button>
                   </Link>
-              }
-            </nav>
-          </>
+                </nav>
+              </>
+            )
+          }
+        </>
       </div>
     </div>
   )

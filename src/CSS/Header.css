@@ -8,33 +8,36 @@
   padding: 10px 0 10px 0 ;
 }
 
-#logo-card-area{
-  align-items: center;
+#logo-card-menu{
   display: flex;
-  width: 15%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#logo-card-area {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 20%;
   padding-left: 10px;
+}
+
+#logo-text-menu {
+  white-space: nowrap;
+  color: #F6E9EE;
+  font-size: 25px;
+  margin-left: 5px;
 }
 
 #logo-text {
   white-space: nowrap;
-  overflow: hidden;
   color: #F6E9EE;
-  animation: aaa 2s steps(12) 1s normal both;
-  border-right: 0.1ch rgb(81, 85, 85) solid;
   font-size: 18px;
   margin-left: 5px;
 }
 
-@keyframes aaa {
-  from {
-    width: 0;
-  }
-  to {
-    width: 118px;
-    border-right: 0 rgb(81, 85, 85) solid;
-  };
-}
-
+#logo-text-menu:hover ,
 #logo-text:hover {
   align-items: center;
   display: flex;
@@ -42,23 +45,43 @@
   color: #4B4A4B;
 }
 
-#mid-header {
+#mid-header-criacao {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: #F6E9EE;
   font-size: 20px;
-  align-self: center;
+  width: 45%;
+}
+
+#mid-header-decks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F6E9EE;
+  border: solid 0.1ch rgb(0, 255, 0);
+  font-size: 20px;
+  width: 60%;
 }
 
 #title-header {
   margin-left: 5px;
 }
 
-#botao-area {
+#botao-area-decks {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border: solid 0.1ch rgb(0, 255, 0);
+  width: 200px;
+  padding-right: 10px;
+}
+
+#botao-area-criacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
   padding-right: 10px;
 }
 
