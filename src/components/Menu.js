@@ -11,7 +11,7 @@ function Menu() {
   const page = useLocation();
   const [criarDeck, setCriarOn] = useState(false);
   const [nomeBaralho, setNomeBaralho] = useState('');
-  const { deck, setLoggedOn, setBaralhoTeste } = useContext(Context);
+  const { setLoggedOn, setBaralhoTeste } = useContext(Context);
 
 /*   const iniciarBaralho = () => {
     setDecks(baralho.nome);
@@ -35,7 +35,6 @@ function Menu() {
                       type="button"
                       onClick={ () => {
                         setBaralhoTeste({ nome: nomeBaralho, cartas: [] });
-                        deck.push(nomeBaralho);
                         setLoggedOn(true);
                       }}
                       id="botao-iniciar-criacao">

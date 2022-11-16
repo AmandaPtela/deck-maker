@@ -3,14 +3,18 @@
   width: 100vw;
   height: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .area-cartas {
-  padding: 40px 0 0 30px;
+  padding: 40px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  width: 90%;
 }
 .cartas {
   background-color: rgba(213, 224, 224, 0.644);

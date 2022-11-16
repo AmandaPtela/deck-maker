@@ -12,11 +12,14 @@ function Colecao() {
     filtrado,
     setFiltrado,
     setBaralho,
+    logged,
     baralhoPrincipal,
+    select,
   } = useContext(Context);
 
   useEffect(() => {
-    setFiltrado(baralhoPrincipal);
+    console.log(filtrado);
+    //setFiltrado(baralhoPrincipal);
   }, [setFiltrado, baralhoPrincipal]);
 
 // const copiaa = localStorage.getItem('copiaBaralho');
@@ -33,6 +36,7 @@ function Colecao() {
       &&  <Header url={ pathname }/>
       }
       </header>
+      <p>{select}</p>
       <div className="area-cartas">
         { filtrado.length === 0 ? <p>Seu baralho está vazio!</p>
         : filtrado.map((carta, index) => (
@@ -92,15 +96,17 @@ function Colecao() {
                 defaultValue={ carta.descricaoCarta }
               />
             </div>
-            <button
-              id="botao-excluir"
-              name={ carta.nomeCarta }
-              type="button"
-              data-testid="delete-button"
-              onClick={ (event) => apagar(event.target.name) }
-            >
-              Excluir
-            </button>
+            { logged && (<>
+              <button
+                id="botao-excluir"
+                name={ carta.nomeCarta }
+                type="button"
+                data-testid="delete-button"
+                onClick={ (event) => apagar(event.target.name) }
+                >
+                Excluir
+              </button>
+              </>)}
           </div>
         ))}
       </div>

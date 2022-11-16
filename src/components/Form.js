@@ -57,8 +57,6 @@ function Form() {
   } */
 
   const handleSaveButton = () => {
-    console.log(deck);
-    console.log(baralho);
     const cartinha = {
       custoCarta,
       nomeCarta,
@@ -70,15 +68,7 @@ function Form() {
       attr3,
       cardTrunfo,
     }
-    /* eslint-disable */ setCustoCarta(0),
-    /* eslint-disable */ setNomeCarta(""),
-    /* eslint-disable */ setDescricao(""),
-    /* eslint-disable */ setImg(""),
-    /* eslint-disable */ setAttr1(0),
-    /* eslint-disable */ setAttr2(0),
-    /* eslint-disable */ setAttr3(0),
-    /* eslint-disable */ setRaridade("Normal"),
-    /* eslint-disable */ setCardTrunfo(false),
+
     /* eslint-disable */ setBaralho([
       ...baralhoPrincipal,
       {
@@ -95,10 +85,21 @@ function Form() {
     ]),
     setBaralhoTeste(prevState => {
       return { ...prevState, cartas: [...baralho.cartas, cartinha]}} )
-    localStorage.setItem("baralhos", JSON.stringify([{...baralho}]));
-    setFiltrado(
-      [...baralhoPrincipal],
-    );
+      localStorage.setItem("baralhos", JSON.stringify([{...baralho}]));
+      setFiltrado(
+        [...baralhoPrincipal],
+        );
+        /* eslint-disable */ setCustoCarta(0),
+        /* eslint-disable */ setNomeCarta(""),
+        /* eslint-disable */ setDescricao(""),
+        /* eslint-disable */ setImg(""),
+        /* eslint-disable */ setAttr1(0),
+        /* eslint-disable */ setAttr2(0),
+        /* eslint-disable */ setAttr3(0),
+        /* eslint-disable */ setRaridade("Normal"),
+        /* eslint-disable */ setCardTrunfo(false);
+        console.log(deck);
+        console.log(baralho);
  };
 
   const trunfo = baralhoPrincipal.filter((carta) => carta.cardTrunfo === true);

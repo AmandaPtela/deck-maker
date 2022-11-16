@@ -21,7 +21,8 @@ export function Provider({ children }) {
   const [baralhoPrincipal, setBaralho] = useState([]);
   const [filtrado, setFiltrado] = useState([]);
   const [deck, setDecks ] = useState([]);
-  const [baralho, setBaralhoTeste ] = useState({nome:'', cartas: []});
+  const [baralho, setBaralhoTeste ] = useState([{nome:'', cartas: []}]);
+  const [select, setSelection ] = useState('');
   const [logged, setLoggedOn ] = useState(false);
 
   return (
@@ -65,6 +66,8 @@ export function Provider({ children }) {
         setBaralhoTeste,
         logged,
         setLoggedOn,
+        select,
+        setSelection,
       } }
     >
       { children }
