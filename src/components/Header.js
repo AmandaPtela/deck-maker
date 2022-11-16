@@ -7,7 +7,7 @@ import criacao from '../Images/img-criacao2.png';
 import '../CSS/Header.css';
 
 function Header(page) {
-  const { setId, baralho } = useContext(Context);
+  const { setId, baralho, setLoggedOn, logged } = useContext(Context);
   if (page.url === '/colecao') {
   return (
     <div className="header">
@@ -34,7 +34,7 @@ function Header(page) {
                 <nav id={page.url.pathname === '/criacao' && "botao-area-criacao"}>
                   <Link to="/">
                     <button
-                      onClick={ () => setId(true) }
+                      onClick={ () => {setId(true); setLoggedOn(!logged) } }
                       type="button"
                       id="ir-menu"
                       >
@@ -71,7 +71,7 @@ function Header(page) {
                   <span id="title-header">{ page.title }</span>
                 </div>
                 <nav id={ page.url=== '/decks' && "botao-area-decks" }>
-                  <Link to="/criacao">
+                  <Link to={logged ? "/criacao" : "/"}>
                     <button
                       type="button"
                       id="ir-criacao"

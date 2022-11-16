@@ -12,6 +12,7 @@ function Search() {
     baralhoPrincipal,
     filtrado,
     setFiltrado,
+    logged,
   } = useContext(Context);
 
   const filtrar = (e) => {
@@ -105,7 +106,7 @@ function Search() {
                 >
                 Pesquisar carta
               </Link>
-              <Link to="/criacao" id="botao-voltar">Voltar</Link>
+              <Link to={ logged ? "/criacao" : "/"} id="botao-voltar">Voltar</Link>
             </div>
           </div>
         )}

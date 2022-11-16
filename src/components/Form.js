@@ -158,17 +158,17 @@ function Form() {
             placeholder="Link imagem"
             type="text"
             onChange={(e) => setImg(e.target.value)}
-            value={imagem}
             id="image-input"
+            value={imagem}
             />
           ou
           <input
             type="file"
-            src={criacao}
             alt="Submit"
             width="20"
             height="20"
             id="upload-img"
+            onChange={(e) => setImg(e.target.value)}
             />
           
         </div>
