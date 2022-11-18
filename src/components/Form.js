@@ -162,7 +162,7 @@ function Form() {
             id="image-input"
             value={imagem}
             />
-          ou
+{/*           ou
           <input
             type="file"
             alt="Submit"
@@ -170,7 +170,7 @@ function Form() {
             height="20"
             id="upload-img"
             onChange={(e) => setImg(e.target.value)}
-            />
+            /> */}
           
         </div>
         <div className="number-area">
