@@ -18,8 +18,7 @@ function Colecao() {
   } = useContext(Context);
 
   useEffect(() => {
-    console.log(filtrado);
-    //setFiltrado(baralhoPrincipal);
+  setFiltrado(baralhoPrincipal);
   }, [setFiltrado, baralhoPrincipal]);
 
 // const copiaa = localStorage.getItem('copiaBaralho');
